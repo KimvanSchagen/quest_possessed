@@ -71,3 +71,19 @@ Z
 *app/public/views/partials/home_content.php,8\9\89f2dda30cc61f856df58769c4956023a6aa94da
 U
 %app/public/views/partials/nav_bar.php,e\f\ef8c9c027732a81b4113e8e2447c9084f01cb4c3
+G
+app/public/lib/auth.php,2\9\29a2126f92669d535b513ca450d1009e6b1c90b2
+S
+#app/public/views/pages/register.php,b\9\b990ef0290d8b8cf5eef79614afab0a8bcd167c8
+P
+ app/public/views/pages/login.php,1\b\1b5df28f073f1473a927053477ab45a6fab3f38a
+[
++app/public/views/partials/login_content.php,9\6\968317ce48fe7bc055df64d387462628deae9e4a
+^
+.app/public/views/partials/register_content.php,3\6\367572ca81982034972bdafa2bbcc42e9b14a585
+N
+app/public/routes/register.php,4\c\4cb31833ee954a980de3dcd60092edcb3d38ecc6
+]
+-app/public/controllers/RegisterController.php,e\3\e36d20b408eb7ecaa5a1debfe784fa7f58e89da0
+S
+#app/public/models/RegisterModel.php,b\1\b1fb1dcd958558cec2082868daf56e995998086e

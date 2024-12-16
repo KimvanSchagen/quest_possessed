@@ -10,11 +10,12 @@
     <meta name="keywords" content="quests, skill development, productivity, life gamification, goal setting, personal growth, habit tracking, challenges">
     <meta name="author" content="Kim van Schagen">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/main.js"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-900">
+<body class="container">
 
 <?php require(__DIR__ . "/nav_bar.php");
