@@ -1,0 +1,4 @@
+
+}	php:S1185"6Remove this method "__construct" to simply inherit it.(éúÜÅûÿÿÿÿ8›ã½2J$00d828fc-d107-4c87-b1fb-eff9d0156828
+w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8›ã½2J$adcbfb38-5b5f-43a7-8416-9951aae83a8d
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8›ã½2J$3fa011ca-58d7-489e-9667-53d61ec983d8

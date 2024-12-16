@@ -87,3 +87,15 @@ N
 -app/public/controllers/RegisterController.php,e\3\e36d20b408eb7ecaa5a1debfe784fa7f58e89da0
 S
 #app/public/models/RegisterModel.php,b\1\b1fb1dcd958558cec2082868daf56e995998086e
+Z
+*app/public/controllers/UsersController.php,1\1\114d2c55ef0f8bebb7f1996ffa6113eeb5336cf8
+P
+ app/public/models/UsersModel.php,1\7\17e573523a845debc348abd02d819554b37ebc45
+K
+app/public/routes/login.php,7\1\714f2342f6bb9c70be4fd44fce996eed7feab012
+Z
+*app/public/controllers/LoginController.php,d\0\d0017be4363010de322730f753b4191929629843
+R
+"app/public/views/pages/profile.php,f\c\fca5577fc10e1b11cf6dd3d9f78bd33597e41770
+]
+-app/public/views/partials/profile_content.php,5\d\5dcb1bcfd8d28901df7e125b0e60e8ab4fc5c586

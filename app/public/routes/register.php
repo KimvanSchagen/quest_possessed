@@ -10,7 +10,8 @@ Route::add('/register', function () {
     $registerController = new RegisterController();
     $errors = $registerController->create($_POST);
     if (is_null($errors)) {
-        require(__DIR__ . "/../views/pages/index.php");
+        header("Location: /");
+        exit;
     }
     else {
         require(__DIR__ . "/../views/pages/register.php");

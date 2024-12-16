@@ -12,12 +12,4 @@ class RegisterModel extends BaseModel {
         $stmt = self::$pdo->prepare($query);
         $stmt->execute($account);
     }
-
-    public function isUnique($field, $value) {
-        $query = "SELECT COUNT(*) FROM users WHERE $field = :value";
-        $stmt = self::$pdo->prepare($query);
-        $stmt->bindParam(':value', $value);
-        $stmt->execute();
-        return $stmt->fetchColumn() == 0; // Returns true if count is 0, meaning unique
-    }
 }

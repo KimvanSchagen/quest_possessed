@@ -1,23 +1,27 @@
 <?php
 
 require_once (__DIR__ . "/../models/RegisterModel.php");
+require_once (__DIR__ . "/UsersController.php");
 
 class RegisterController {
     private $registermodel;
+    private $userscontroller;
     public function __construct()
     {
         $this->registermodel = new RegisterModel();
+        $this->userscontroller = new UsersController();
     }
 
-    public function create($account) {
+    public function create($account): ?array
+    {
         $errors = [];
 
-        if (!$this->registermodel->isUnique('username', $account['username'])) {
+        if ($this->userscontroller->exists('username', $account['username'])) {
             $errors['username'] = "Username already exists. Please choose a different one.";
         }
 
         // Check if the email is unique
-        if (!$this->registermodel->isUnique('email', $account['email'])) {
+        if ($this->userscontroller->exists('email', $account['email'])) {
             $errors['email'] = "Email already exists. Please use a different email address.";
         }
 
@@ -31,11 +35,10 @@ class RegisterController {
         // Create the account
         $this->registermodel->create($account);
 
+        $user = $this->userscontroller->getUserByUsername($account['username']);
+
         // Save the user in the session
-        $_SESSION['user'] = [
-            'username' => $account['username'],
-            'email' => $account['email']
-        ];
+        $_SESSION['user'] = $user;
 
         return null;
     }

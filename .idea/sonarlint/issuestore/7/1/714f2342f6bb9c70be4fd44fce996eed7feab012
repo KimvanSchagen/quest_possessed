@@ -1,0 +1,9 @@
+
+A	php:S2003"&Replace "require" with "require_once".(ÃÄ÷8Ï¾µ½2
+A	php:S2003"&Replace "require" with "require_once".(ÃÄ÷8Ï¾µ½2
+V	php:S6600"5Remove the parentheses from this "require_once" call.(ÍÄ¹ıÿÿÿÿ8Ï¾µ½2
+K	php:S6600"0Remove the parentheses from this "require" call.(ÃÄ÷8Ï¾µ½2
+K	php:S6600"0Remove the parentheses from this "require" call.(ÃÄ÷8Ï¾µ½2
+r	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ÍÄ¹ıÿÿÿÿ8Ï¾µ½2
+g	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÃÄ÷8Ï¾µ½2
+g	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÃÄ÷8Ï¾µ½2
