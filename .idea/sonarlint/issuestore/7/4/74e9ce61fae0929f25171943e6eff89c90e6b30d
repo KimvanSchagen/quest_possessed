@@ -1,0 +1,10 @@
+
+f	php:S2003"&Replace "require" with "require_once".(ìÇïÙþÿÿÿÿJ$bc3dd842-167f-454d-915c-cacd54e64833
+a	php:S2003"&Replace "require" with "require_once".(Òñ­£J$da4c61f4-3c1b-4a40-837d-5eb756958436
+f	php:S2003"&Replace "require" with "require_once".(Ý×ÐïüÿÿÿÿJ$b4091eea-76e5-46a4-9ded-53200f6e0a76
+p	php:S6600"0Remove the parentheses from this "require" call.(ìÇïÙþÿÿÿÿJ$5c66c5a4-3f54-46a5-b12f-71f3491f5307
+k	php:S6600"0Remove the parentheses from this "require" call.(Òñ­£J$26bc9f45-ffaf-4ded-8769-63968de6d33a
+p	php:S6600"0Remove the parentheses from this "require" call.(Ý×ÐïüÿÿÿÿJ$633315e7-b0e3-43d0-836e-98ee8081d4f6
+Œ	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ìÇïÙþÿÿÿÿJ$1f1c5a15-62f4-48e3-a518-67a44833ed00
+‡	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(Òñ­£J$e9bd43b4-034c-4985-b465-dc4f1c076a0d
+Œ	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(Ý×ÐïüÿÿÿÿJ$f1ac53b6-54bc-470e-b35a-db18fc03f5af

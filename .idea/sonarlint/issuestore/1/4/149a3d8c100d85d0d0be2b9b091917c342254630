@@ -1,0 +1,7 @@
+
+y	php:S1481"7Remove this unused "$guestbookMessages" local variable.(ÅÅäÏ8Š§º×¼2J$bc3cdb65-bb9a-4b21-a0f0-cae99a9b2b7e
+g	php:S2003"&Replace "require" with "require_once".(×Íß@8š ˜ƒ¼2J$8849647a-9985-4f01-8387-3457c9b38e18
+w	php:S6600"5Remove the parentheses from this "require_once" call.(ÃØ®¸8ª‡…—·2J$1f7a26a5-4a0e-4369-9a98-144a0e040c44
+q	php:S6600"0Remove the parentheses from this "require" call.(×Íß@8š ˜ƒ¼2J$4c348f32-8bd4-4b73-92da-2b415cdf37b7
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ÃØ®¸8ª‡…—·2J$e190f344-b424-40b7-8b85-94ef76e40748
+	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(×Íß@8› ˜ƒ¼2J$f4944f0f-c5b8-4b71-9b9c-09ccc76abea3

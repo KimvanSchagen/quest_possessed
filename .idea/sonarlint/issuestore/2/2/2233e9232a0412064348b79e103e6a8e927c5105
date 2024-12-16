@@ -1,0 +1,7 @@
+
+|	php:S1784":Explicitly mention the visibility of this method "create".(­û¿¬8‘·í×¼2J$c79d5017-14d4-4e50-8d08-3f721d424f2b
+x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8‘·í×¼2J$292e05f4-4f08-4315-9955-1b9e2a36f307
+w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8‘·í×¼2J$16babb31-d349-4ef3-994d-4eef927fd78d
+|	php:S6600"5Remove the parentheses from this "require_once" call.(±Õ¢Šþÿÿÿÿ8‘·í×¼2J$b12e2726-b773-4fa5-a0ad-4b99f7125fc4
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8‘·í×¼2J$0c4915fb-ad66-4953-b23b-ce8e4d0cfbb7
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(±Õ¢Šþÿÿÿÿ8‘·í×¼2J$5db41836-6915-4e30-ac18-13daa1515c86
