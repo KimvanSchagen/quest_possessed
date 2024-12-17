@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+require_once(__DIR__ . '/../../lib/auth.php');
+?>
+
+
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,4 +23,11 @@
 
 <body class="container">
 
-<?php require(__DIR__ . "/nav_bar.php");
+<?php
+if (!isManager()) {
+    require(__DIR__ . "/nav_bar.php");
+}
+else {
+    require (__DIR__ . "/nav_bar_manager.php");
+}
+

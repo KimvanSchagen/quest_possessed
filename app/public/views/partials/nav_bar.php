@@ -8,7 +8,6 @@ require_once(__DIR__ . '/../../lib/auth.php');
     </ul>
     <ul>
         <li><a href="/" class="contrast">Home</a></li>
-
         <li><a href="/discover" class="contrast">Discover</a></li>
         <?php if (isLoggedIn()){ ?>
             <li><a href="/create" class="contrast">Create</a></li>
