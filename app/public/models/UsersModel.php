@@ -53,4 +53,16 @@ class UsersModel extends BaseModel {
         $stmt->execute();
         return $stmt->fetchColumn() > 0;
     }
+
+    public function getUsersOngoingQuests($user_id) {
+
+    }
+
+    public function getUsersCompletedQuests($user_id) {
+
+    }
+
+    public function getUsersCompletedQuest($user_id) {
+
+    }
 }

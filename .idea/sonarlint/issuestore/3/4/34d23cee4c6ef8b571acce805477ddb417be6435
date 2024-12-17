@@ -1,5 +1,0 @@
-
-³	php:S1186"lAdd a nested comment explaining why this method is empty, throw an Exception or complete the implementation.(šñµèúÿÿÿÿ8çÎ†–·2J$d7227831-f730-4933-bd9e-b46a065a2797
-x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8çÎ†–·2J$152d04d9-a893-46ce-937f-02e97740a9d7
-w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8çÎ†–·2J$bfe65e75-3440-4b27-b739-092c975ddb01
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8çÎ†–·2J$cd479e6e-27eb-4440-8b4f-abfa2b1d8df4

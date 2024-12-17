@@ -23,4 +23,15 @@ class UsersController {
         return $this->usersModel->exists($field, $value);
     }
 
+    public function getUsersOngoingQuests($user_id) {
+        return $this->usersModel->getUsersOngoingQuests($user_id);
+    }
+
+    public function getUsersCompletedQuests($user_id) {
+        return $this->usersModel->getUsersCompletedQuests($user_id);
+    }
+
+    public function getUsersCreatedQuests($user_id) {
+        return $this->usersModel->getUsersCompletedQuest($user_id);
+    }
 }

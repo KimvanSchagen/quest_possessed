@@ -1,0 +1,4 @@
+
+@	php:S2003"&Replace "require" with "require_once".( Συώÿÿÿÿ
+J	php:S6600"0Remove the parentheses from this "require" call.( Συώÿÿÿÿ
+f	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.( Συώÿÿÿÿ

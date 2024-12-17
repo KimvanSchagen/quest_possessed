@@ -1,0 +1,10 @@
+
+k	php:S1172"0Remove the unused function parameter "$questId".(é¾¦J$d0fa6b19-9dc5-4fb2-b59b-b94546a30026
+f	php:S2003"&Replace "require" with "require_once".(ïù¹„ùÿÿÿÿJ$6291499e-422c-4587-b022-b9527b9785b5
+m	php:S2003"&Replace "require" with "require_once".(èøŠÇúÿÿÿÿ8Ü‡Á¤½2J$3b01b9ed-7b4d-4738-a49b-fd05e8319390
+|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8Íà²¤½2J$60a6b76d-4c7a-4e19-91e4-d51a7afe3e4a
+w	php:S6600"0Remove the parentheses from this "require" call.(ïù¹„ùÿÿÿÿ8¿ì¼¤½2J$33ae0c7e-b435-4379-8254-65c7b943a95a
+w	php:S6600"0Remove the parentheses from this "require" call.(èøŠÇúÿÿÿÿ8Ü‡Á¤½2J$5d2909ab-34a0-4775-bc5b-28b993f662da
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8Íà²¤½2J$4289444c-1dd9-484e-9fe0-8d4936cf04de
+Œ	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ïù¹„ùÿÿÿÿJ$e92d3987-1706-4f40-8736-0e85f8bd3df8
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(èøŠÇúÿÿÿÿ8Ü‡Á¤½2J$7a2787f7-84ab-4d16-bda2-6f566516f2e6

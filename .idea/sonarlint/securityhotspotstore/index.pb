@@ -15,51 +15,17 @@ P
  app/public/views/pages/index.php,9\a\9af324f78f58e9c3801fb49300769dcf081659f5
 T
 $app/public/views/partials/header.php,a\c\ac1991a352399a75d7e53dc6d9b40b4fe81e3b9e
-X
-(app/public/views/partials/header_nav.php,1\f\1f42ff0bda0599b00d9b6dfed51c9dc32f3f3753
 T
 $app/public/views/partials/footer.php,6\f\6fe51c5ac533231d78e741b8093cc43749501338
-P
- app/public/views/pages/users.php,7\4\74e9ce61fae0929f25171943e6eff89c90e6b30d
-S
-#app/public/views/partials/users.php,4\2\424c4f3363f4b52dd153ae34f7a463995af3811f
-R
-"app/public/views/partials/user.php,2\a\2a7c12f752a1d233a1b8fa978ed49930be3d025f
 L
 app/public/assets/js/main.js,e\c\ecce6b4e315d659df28abcfa08ab2b39f77625a2
-Y
-)app/public/controllers/UserController.php,a\2\a2704d0140c645e0f3682888cb1abe3232c166ac
-O
-app/public/models/UserModel.php,d\7\d760372a3741992b7ede93e6b5f07ecf8e95e82f
-J
-app/public/routes/user.php,a\a\aa31750fbfb2f6ed29bb60008c815c1a1f1fa68c
-^
-.app/public/views/partials/homepage_content.php,5\7\5734a36267c9c2814accfda07893dd80f8eb8087
 O
 app/public/models/BaseModel.php,7\9\795a83ab3074d4d5f84caff3ac42913227f746db
-T
-$app/public/models/GuestbookModel.php,3\4\34d23cee4c6ef8b571acce805477ddb417be6435
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
-^
-.app/public/controllers/GuestbookController.php,c\b\cb1c55ea18eb06ca9bbcc82be0f8e456a8f55ed6
-T
-$app/public/views/pages/guestbook.php,c\a\ca240b17a6305a17b61c64e8bfd0c49df06e8e8e
-W
-'app/public/views/partials/guestbook.php,0\9\09a39e15f236327089f7280459fe14b9dc2e6409
-P
- app/public/routes/guest_book.php,1\4\149a3d8c100d85d0d0be2b9b091917c342254630
-T
-$app/public/models/GuestBookModel.php,2\2\2233e9232a0412064348b79e103e6a8e927c5105
-^
-.app/public/controllers/GuestBookController.php,9\3\93cd5555204cc1ff4bdfe28c8bc07d9737d48503
-\
-,app/public/views/partials/guestbook_form.php,9\4\946ef60251380bc3bdef39163abb6d1da9577261
 :
 
 nginx.conf,e\d\ed8b45da44d73de79bd7c1c203a419d6ee7d6fde
-T
-$app/public/dto/GuestBookEntryDTO.php,0\7\07073d734d68ac7b8b0061341b40f77fc0bab90e
 O
 app/public/assets/css/style.css,6\2\629859b7ca2aed20c16ffa6915cf0739e063bed7
 >
@@ -99,3 +65,19 @@ R
 "app/public/views/pages/profile.php,f\c\fca5577fc10e1b11cf6dd3d9f78bd33597e41770
 ]
 -app/public/views/partials/profile_content.php,5\d\5dcb1bcfd8d28901df7e125b0e60e8ab4fc5c586
+L
+app/public/routes/create.php,8\1\81e6420e2707f823b0c2e6e47d95edba6e059cd0
+N
+app/public/routes/discover.php,7\3\737c68b566309e4041d56b6ed09cabf6f5d02009
+M
+app/public/routes/profile.php,6\9\69c577f0b445c2ef756512dd72d8edd19e7b6801
+N
+app/public/routes/progress.php,f\0\f0359b5f6d878f2db7930b18dbf99431b35f54ca
+L
+app/public/routes/quests.php,d\3\d39fc4ab59bc06356a0dd25da3124428163ed139
+D
+questpossesseddb.sql,d\a\dac15d45065b14156e281a69bb9a0bc5e1a7e224
+^
+.app/public/views/partials/discover_content.php,5\c\5c9c14f8bddc54ee29424b69f46fbdaa29b36700
+]
+-app/public/views/partials/nav_bar_manager.php,0\1\013355a9482aa8a76675181d0f9291d6c9f7be00

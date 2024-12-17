@@ -1,9 +1,16 @@
 <?php
 
 require_once (__DIR__ . "/../controllers/LoginController.php");
+require_once(__DIR__ . '/../lib/auth.php');
 
 Route::add('/login', function () {
-    require(__DIR__ . "/../views/pages/login.php");
+    if (!isLoggedIn()) {
+        require(__DIR__ . "/../views/pages/login.php");
+    }
+    else {
+        header("Location: /");
+        exit;
+    }
 });
 
 Route::add('/login', function () {

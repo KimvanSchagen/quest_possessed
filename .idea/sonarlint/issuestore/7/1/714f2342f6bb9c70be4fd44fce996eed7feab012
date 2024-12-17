@@ -1,9 +1,12 @@
 
-A	php:S2003"&Replace "require" with "require_once".(ÃÄ÷8Ï¾µ½2
-A	php:S2003"&Replace "require" with "require_once".(ÃÄ÷8Ï¾µ½2
-V	php:S6600"5Remove the parentheses from this "require_once" call.(ÍÄ¹ıÿÿÿÿ8Ï¾µ½2
-K	php:S6600"0Remove the parentheses from this "require" call.(ÃÄ÷8Ï¾µ½2
-K	php:S6600"0Remove the parentheses from this "require" call.(ÃÄ÷8Ï¾µ½2
-r	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ÍÄ¹ıÿÿÿÿ8Ï¾µ½2
-g	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÃÄ÷8Ï¾µ½2
-g	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÃÄ÷8Ï¾µ½2
+	php:S1192"LDefine a constant instead of duplicating this literal "Location: /" 3 times.(µºöº8ß‚–¤½2J$b45b121c-0756-4c01-82db-1c662aec0fe2
+g	php:S2003"&Replace "require" with "require_once".(ÃÄ÷8óŞ”¤½2J$b2cb1808-b408-4f0d-a171-89ea16153295
+g	php:S2003"&Replace "require" with "require_once".(ÃÄ÷8ß‚–¤½2J$cf1ac6f6-0353-4296-bb52-be747048dc72
+|	php:S6600"5Remove the parentheses from this "require_once" call.(ÍÄ¹ıÿÿÿÿ8óŞ”¤½2J$d1f22d9a-0d4f-4298-8934-86af821331b3
+|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8óŞ”¤½2J$956ca9d4-ab6f-4ad9-8e8e-322698ed94c7
+q	php:S6600"0Remove the parentheses from this "require" call.(ÃÄ÷8óŞ”¤½2J$e0408565-750b-4cc6-b2b8-5c95ffd3e4fd
+q	php:S6600"0Remove the parentheses from this "require" call.(ÃÄ÷8ß‚–¤½2J$ec307d92-a748-4a59-9500-b07cfbf1044f
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ÍÄ¹ıÿÿÿÿ8óŞ”¤½2J$1c2f324e-46f5-4b13-b508-3d74039b51fd
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8óŞ”¤½2J$b0dc9fa3-c331-4fa2-9941-7b98f11684ad
+	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÃÄ÷8óŞ”¤½2J$7877346e-dfce-4525-a974-436338ab004a
+	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÃÄ÷8ß‚–¤½2J$6d346bcf-becc-4ae5-bf9c-84c6c429ec31
