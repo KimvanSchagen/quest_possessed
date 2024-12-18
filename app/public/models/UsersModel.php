@@ -7,6 +7,25 @@ class UsersModel extends BaseModel {
         parent::__construct();
     }
 
+    public function getUserById($id) {
+        $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
+                    FROM users
+                    WHERE id LIKE :id";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':id', $id);
+
+        $stmt->execute();
+
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user) {
+            return $user;
+        }
+        else {
+            return null;
+        }
+    }
+
     public function getUserByUsername($username) {
         $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
@@ -54,15 +73,16 @@ class UsersModel extends BaseModel {
         return $stmt->fetchColumn() > 0;
     }
 
-    public function getUsersOngoingQuests($user_id) {
+    public function editUsername($userId, $newUsername) {
 
     }
 
-    public function getUsersCompletedQuests($user_id) {
-
-    }
-
-    public function getUsersCompletedQuest($user_id) {
-
+    public function editProfilePicture($userId, $newPicture): void
+    {
+        $query = "UPDATE users SET profile_picture = :picture WHERE id = :id";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':picture', $newPicture);
+        $stmt->bindParam(':id', $userId);
+        $stmt->execute();
     }
 }

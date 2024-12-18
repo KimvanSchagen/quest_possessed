@@ -9,6 +9,10 @@ class UsersController {
         $this->usersModel = new UsersModel();
     }
 
+    public function getUserById($id) {
+        return $this->usersModel->getUserById($id);
+}
+
     public function getUserByUsername($username)
     {
         return $this->usersModel->getUserByUsername($username);
@@ -23,15 +27,28 @@ class UsersController {
         return $this->usersModel->exists($field, $value);
     }
 
-    public function getUsersOngoingQuests($user_id) {
-        return $this->usersModel->getUsersOngoingQuests($user_id);
+    public function editUsername($userId, $newUsername) {
+        $errors = [];
+        if ($this->exists('username', $newUsername)) {
+            $errors['username'] = "Username already exists. Please choose a different one.";
+        }
+        if (!empty($errors)) {
+            return $errors; // Return errors to the view
+        }
+
+        $this->usersModel->editUsername($userId, $newUsername);
+        $user = $this->getUserByUsername($newUsername);
+
+        $_SESSION['user'] = $user;
+
+        return null;
     }
 
-    public function getUsersCompletedQuests($user_id) {
-        return $this->usersModel->getUsersCompletedQuests($user_id);
-    }
-
-    public function getUsersCreatedQuests($user_id) {
-        return $this->usersModel->getUsersCompletedQuest($user_id);
+    public function editProfilePicture($userId, $newPicture) {
+        if (!is_null($this->getUserById($userId))) {
+            $this->usersModel->editProfilePicture($userId, $newPicture);
+            $user = $this->getUserById($userId);
+            $_SESSION['user'] = $user;
+        }
     }
 }

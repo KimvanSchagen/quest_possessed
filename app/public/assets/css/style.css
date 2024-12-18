@@ -16,6 +16,18 @@
     flex: 2;
 }
 
+.profile-info button {
+    all: unset;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.profile-info button:hover {
+    text-decoration: underline;
+}
+
 .profile-level {
     flex: 1;
     text-align: center;
@@ -36,7 +48,7 @@
 }
 
 .profile-card {
-    background-color: burlywood;
+    background-color: #25451e;
     padding: 25px;
     margin: 25px;
     border-radius: 15px;
@@ -44,12 +56,12 @@
 }
 
 .profile-card p {
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 .profile-card h2 {
-    color: black;
+    color: white;
 }
 
 .progress-bar {
@@ -58,6 +70,34 @@
 
 .achievementPoints {
     margin-top: 50px;
+}
+
+.profilePictureSelection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.profilePictureSelection label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profilePictureSelection img {
+    max-width: 200px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+}
+
+.profilePictureSelection input[type="radio"]:checked + img {
+    border-color: deepskyblue;
+    border-width: 10px;
+}
+
+.profilePictureSelection input[type="radio"] {
+    display: none;
 }
 
 @media (max-width: 768px) {

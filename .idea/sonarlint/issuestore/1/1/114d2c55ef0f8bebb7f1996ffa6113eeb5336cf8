@@ -1,3 +1,3 @@
 
-w	php:S6600"5Remove the parentheses from this "require_once" call.(Ù®‚8Ğè‘½2J$3963f753-5159-476d-ac8d-35af26ea8ade
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ù®‚8Ğè‘½2J$20f93a7f-3836-43bb-a67e-7609fa2dee5b
+Q	php:S6600"5Remove the parentheses from this "require_once" call.(Ù®‚8ÛıˆÔ½2
+m	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ù®‚8ÛıˆÔ½2

@@ -1,10 +1,8 @@
-<?php
-$user = $_SESSION['user'];
-?>
+<script src="/assets/js/dialog.js"></script>
 <div>
     <div class="profile-container">
         <div class="profile-picture">
-            <img src="<?php echo $user['profile_picture'] ?>" alt="Profile picture">
+            <img src="<?php echo $user['profile_picture'] ?>" alt="Profile">
         </div>
         <div class="profile-info">
             <h1><?php echo htmlspecialchars($user['username'] ?? 'User'); ?></h1>
@@ -15,10 +13,10 @@ $user = $_SESSION['user'];
                     Edit
                 </summary>
                 <ul>
-                    <li>Change username</li>
-                    <li>Change profile picture</li>
-                    <li>Change email</li>
-                    <li>Change password</li>
+                    <li><button onclick="openEditUsername()">Change username</button></li>
+                    <li><button onclick="openEditProfilePicture()">Change profile picture</button></li>
+                    <li><button onclick="openEditEmail()">Change email</button></li>
+                    <li><button onclick="openEditPassword()">Change password</button></li>
                 </ul>
             </details>
         </div>
@@ -45,3 +43,6 @@ $user = $_SESSION['user'];
         </div>
     </div>
 </div>
+
+
+

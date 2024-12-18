@@ -1,9 +1,9 @@
 
-m	php:S2003"&Replace "require" with "require_once".(ÆÜ°ÿÿÿÿÿ8Æ¾è¤½2J$3dd546f0-3198-4442-ba40-e26adde4f6e6
-m	php:S2003"&Replace "require" with "require_once".(ºòİÿÿÿÿÿ8Æ¾è¤½2J$935963ff-0ec9-42df-b13f-fb72655d664e
-w	php:S6600"5Remove the parentheses from this "require_once" call.(œÕÂ™8€ãæ¤½2J$819042f4-97f8-4c7e-966a-54caefd75669
-w	php:S6600"0Remove the parentheses from this "require" call.(ÆÜ°ÿÿÿÿÿ8Æ¾è¤½2J$2e2a95d4-4428-4da4-b72a-78dcb5856c53
-w	php:S6600"0Remove the parentheses from this "require" call.(ºòİÿÿÿÿÿ8Æ¾è¤½2J$c0f757b9-e8ab-491a-9168-c6352717013d
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(œÕÂ™8€ãæ¤½2J$548150c5-8d71-4489-b87d-0c601da7d689
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÆÜ°ÿÿÿÿÿ8Æ¾è¤½2J$9f0e802f-c427-45b6-bc4a-210385b2619b
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ºòİÿÿÿÿÿ8Æ¾è¤½2J$651e9e53-5610-4d2c-a40a-166ab3c21dd7
+m	php:S2003"&Replace "require" with "require_once".(ÆÜ°ÿÿÿÿÿ8Æ¾è¤½2J$d1e2f6e4-17bd-44c9-8b5f-4e6be1a3932a
+m	php:S2003"&Replace "require" with "require_once".(ºòİÿÿÿÿÿ8Æ¾è¤½2J$fc960a12-b256-4706-9bf3-d98aaf819cd0
+w	php:S6600"5Remove the parentheses from this "require_once" call.(œÕÂ™8€ãæ¤½2J$0c42c473-43e4-4249-8f2d-1858fbd7c504
+w	php:S6600"0Remove the parentheses from this "require" call.(ÆÜ°ÿÿÿÿÿ8Ù¥°Ô½2J$80765764-c1f5-45c5-886a-595e35d7d816
+w	php:S6600"0Remove the parentheses from this "require" call.(ºòİÿÿÿÿÿ8Æ¾è¤½2J$0bccc6ee-17dc-48ed-8f6b-66ff2e809ab5
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(œÕÂ™8€ãæ¤½2J$7408d48c-1657-4871-bf81-6cd9816e46f0
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÆÜ°ÿÿÿÿÿ8Æ¾è¤½2J$f5244a69-bbc2-4fc4-a17c-c4960e93daa2
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ºòİÿÿÿÿÿ8Æ¾è¤½2J$1b1ad331-80f5-4367-b3b5-ef7bf93d2be1

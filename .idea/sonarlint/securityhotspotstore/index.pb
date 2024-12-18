@@ -105,3 +105,13 @@ K
 app/public/lib/Leveling.php,e\2\e2c6733aea5eb2904e66b6bce48a6e56dfcc6ede
 [
 +app/public/views/partials/edit_username.php,d\5\d599ade6d5e498244553eebd1b732eefbbab1c7b
+N
+app/public/assets/js/dialog.js,d\e\ded854686b78599e9aa62d6582760f36f6c1bdd7
+Z
+*app/public/views/partials/user_content.php,e\0\e0b73c794a40d40d2fceec952b00f23a337377b4
+X
+(app/public/views/partials/edit_email.php,d\b\db329a1c939fd330021f88d3af8945e6c8e3074f
+b
+2app/public/views/partials/edit_profile_picture.php,a\4\a4bc75591e5fc6e3d91513c0ed56392858cf51ed
+[
++app/public/views/partials/edit_password.php,6\6\66790f42f6b61f911bec7e6008309ffe6e861014

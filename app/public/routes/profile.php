@@ -3,6 +3,7 @@
 require_once(__DIR__ . '/../lib/auth.php');
 require_once (__DIR__ . '/../lib/Leveling.php');
 require_once(__DIR__ . "/../controllers/QuestController.php");
+require_once (__DIR__ . "/../controllers/UsersController.php");
 
 Route::add('/profile', function () {
     if (isLoggedIn()) {
@@ -26,9 +27,32 @@ Route::add('/profile', function () {
             $ongoingQuests = count($questController->getOngoingByUser($user['id']));
         }
         require(__DIR__ . "/../views/pages/profile.php");
+        require (__DIR__ . "/../views/partials/edit_username.php");
+        require (__DIR__ . "/../views/partials/edit_profile_picture.php");
+        require (__DIR__ . "/../views/partials/edit_email.php");
+        require (__DIR__ . "/../views/partials/edit_password.php");
     }
     else {
         header("Location: /");
         exit;
     }
 });
+
+Route::add('/edit-username', function () {
+    $userController = new UsersController();
+    $errors = $userController->editUsername($_SESSION['user']['id'], $_POST['username']);
+    if (is_null($errors)) {
+        header("Location: /");
+        exit;
+    }
+    else {
+        header("Location: /profile");
+        exit;
+    }
+}, ["post"]);
+
+Route::add('/edit-profile-picture', function () {
+    $userController = new UsersController();
+    $userController->editProfilePicture($_SESSION['user']['id'], $_POST['profilePicture']);
+    header("Location: /profile");
+}, ["post"]);
