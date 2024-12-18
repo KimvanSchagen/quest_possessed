@@ -1,0 +1,6 @@
+
+	php:S1131G"@Remove the useless trailing whitespaces at the end of this line.(Ùüš-8ÇšŒÍ½2J$18c64063-a785-4bef-91d2-bde8e3feac63
+Š	php:S1192#"HDefine a constant instead of duplicating this literal ":userId" 3 times.(ƒşìĞ8ñÒ’Í½2J$a59a4d28-4c17-4154-919a-4d50c245c94c
+x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8ÇšŒÍ½2J$4a1d3b7e-37a1-4036-ba8e-a85ca36383a6
+w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8ÇšŒÍ½2J$b6387f78-85e0-48a3-9b48-b904f50a03b0
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8ÇšŒÍ½2J$05f525d2-6cc8-4249-a74f-0af7c718a5b4

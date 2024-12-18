@@ -81,3 +81,27 @@ D
 .app/public/views/partials/discover_content.php,5\c\5c9c14f8bddc54ee29424b69f46fbdaa29b36700
 ]
 -app/public/views/partials/nav_bar_manager.php,0\1\013355a9482aa8a76675181d0f9291d6c9f7be00
+\
+,app/public/views/partials/create_content.php,b\2\b2469f37cb63e73a774c9d2835ed6099285d44c3
+Z
+*app/public/controllers/QuestController.php,2\e\2e356419832b09ec3c2ed580e5f94a47390c8e6b
+P
+ app/public/models/QuestModel.php,b\9\b981bf055f79f54cdabaafa252823fb842fb3536
+V
+&app/public/views/pages/createQuest.php,d\2\d2b29a1a609b3a5e2270882753c54193e4f97f8f
+Q
+!app/public/views/pages/create.php,5\4\54bf964bf4f67d7ba69cc34a9b6251e647ef47d0
+b
+2app/public/views/partials/create_quest_content.php,8\3\83a4bdc80096a1e64614a2e4273d5784888e39eb
+W
+'app/public/views/pages/createStages.php,d\5\d59315e718251a5c295b303bbbe5736c0441c6f0
+c
+3app/public/views/partials/create_stages_content.php,b\e\bedddd6ececf865e59f1aae8a595058a17a20bb8
+Z
+*app/public/views/partials/create_stage.php,d\1\d1afe054ed76a7fe77bae2a42146aeed0006e807
+K
+app/public/lib/leveling.php,f\d\fd354c226e536c26769f3d1e61fb5f2363312d3c
+K
+app/public/lib/Leveling.php,e\2\e2c6733aea5eb2904e66b6bce48a6e56dfcc6ede
+[
++app/public/views/partials/edit_username.php,d\5\d599ade6d5e498244553eebd1b732eefbbab1c7b

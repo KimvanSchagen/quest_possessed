@@ -1,3 +1,73 @@
-img {
-    border-radius: 5px;
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 2;
+}
+
+.profile-level {
+    flex: 1;
+    text-align: center;
+}
+
+.level-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.profile-card {
+    background-color: burlywood;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.profile-card p {
+    color: black;
+    font-weight: bold;
+}
+
+.profile-card h2 {
+    color: black;
+}
+
+.progress-bar {
+    text-align: center;
+}
+
+.achievementPoints {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info, .profile-level {
+        flex: none;
+        width: 100%;
+    }
 }

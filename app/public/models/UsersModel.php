@@ -8,7 +8,7 @@ class UsersModel extends BaseModel {
     }
 
     public function getUserByUsername($username) {
-        $query = "SELECT id, username, email, password, permissions, date_created, level, current_points
+        $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
                     WHERE username LIKE :username";
         $stmt = self::$pdo->prepare($query);
@@ -27,7 +27,7 @@ class UsersModel extends BaseModel {
     }
 
     public function getUserByEmail($email) {
-        $query = "SELECT id, username, email, password, permissions, date_created, level, current_points
+        $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
                     WHERE email LIKE :email";
         $stmt = self::$pdo->prepare($query);

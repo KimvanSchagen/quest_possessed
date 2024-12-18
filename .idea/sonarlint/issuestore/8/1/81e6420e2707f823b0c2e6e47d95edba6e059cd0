@@ -1,6 +1,19 @@
 
-m	php:S2003"&Replace "require" with "require_once".(™„¾šşÿÿÿÿ8Ù¤½2J$8fc4ce0f-18e0-431c-99db-bf3b15a3daaa
-|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8‘Í¤½2J$ceb41246-f42b-4efc-af8b-410bf4005966
-w	php:S6600"0Remove the parentheses from this "require" call.(™„¾šşÿÿÿÿ8Ù¤½2J$32c914aa-bbd9-4e1f-bc2e-f23f990fb6ca
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8‘Í¤½2J$3a52770f-023c-44c4-a3bc-a2d5a5e4e1fa
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(™„¾šşÿÿÿÿ8Ù¤½2J$8f2fccb4-bd08-4957-861f-c5c9cee126cb
+S	php:S1481	"2Remove this unused "$questsByUser" local variable.(˜ôÑ²øÿÿÿÿ8˜¸ü¦½2
+L	php:S1481"+Remove this unused "$quest" local variable.(òÎ†Êúÿÿÿÿ8˜¸ü¦½2
+G	php:S2003
+"&Replace "require" with "require_once".(™„¾šşÿÿÿÿ8˜¸ü¦½2
+B	php:S2003"&Replace "require" with "require_once".(’¢î8˜¸ü¦½2
+G	php:S2003"&Replace "require" with "require_once".(¯£ÔÜøÿÿÿÿ8˜¸ü¦½2
+V	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8˜¸ü¦½2
+P	php:S6600"5Remove the parentheses from this "require_once" call.(ĞîÛ(8˜¸ü¦½2
+Q	php:S6600
+"0Remove the parentheses from this "require" call.(™„¾šşÿÿÿÿ8˜¸ü¦½2
+L	php:S6600"0Remove the parentheses from this "require" call.(’¢î8µÇéÊ½2
+Q	php:S6600"0Remove the parentheses from this "require" call.(¯£ÔÜøÿÿÿÿ8˜¸ü¦½2
+r	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8˜¸ü¦½2
+l	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ĞîÛ(8˜¸ü¦½2
+m	php:S4833
+"LReplace "require" with namespace import mechanism through the "use" keyword.(™„¾šşÿÿÿÿ8˜¸ü¦½2
+h	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(’¢î8˜¸ü¦½2
+m	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(¯£ÔÜøÿÿÿÿ8˜¸ü¦½2

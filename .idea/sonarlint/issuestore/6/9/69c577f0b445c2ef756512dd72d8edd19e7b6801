@@ -1,6 +1,14 @@
 
-m	php:S2003"&Replace "require" with "require_once".(‘ãáÜÿÿÿÿÿ8¯±¥¤½2J$82e15798-6fed-44c7-b827-1fc1e7ae47fd
-|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8¯±¥¤½2J$de52339b-e140-4628-8df9-57d1aaad31a0
-w	php:S6600"0Remove the parentheses from this "require" call.(‘ãáÜÿÿÿÿÿ8°±¥¤½2J$c9be88d9-6fe3-49c2-a80d-2aeee9e4ec3b
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8°±¥¤½2J$3eeea967-46c6-41dd-95d1-c45c226ccd9d
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(‘ãáÜÿÿÿÿÿ8°±¥¤½2J$55ed8147-acb7-47a9-a24c-5a98982cf810
+N	php:S1481"2Remove this unused "$pointsNeeded" local variable.(ô‹œ8„Í—Î½2
+T	php:S1481"3Remove this unused "$createdQuests" local variable.(¡¼Äüÿÿÿÿ8„Í—Î½2
+Q	php:S1481"5Remove this unused "$completedQuests" local variable.(îÎÒ„8„Í—Î½2
+T	php:S1481"3Remove this unused "$ongoingQuests" local variable.(¢Í—şÿÿÿÿ8„Í—Î½2
+G	php:S2003"&Replace "require" with "require_once".(‘ãáÜÿÿÿÿÿ8„Í—Î½2
+V	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8„Í—Î½2
+V	php:S6600"5Remove the parentheses from this "require_once" call.(¡™ñõûÿÿÿÿ8„Í—Î½2
+P	php:S6600"5Remove the parentheses from this "require_once" call.(ĞîÛ(8„Í—Î½2
+Q	php:S6600"0Remove the parentheses from this "require" call.(‘ãáÜÿÿÿÿÿ8„Í—Î½2
+r	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8„Í—Î½2
+r	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¡™ñõûÿÿÿÿ8„Í—Î½2
+l	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ĞîÛ(8„Í—Î½2
+m	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(‘ãáÜÿÿÿÿÿ8…Í—Î½2
