@@ -129,3 +129,13 @@ Q
 !app/public/views/pages/quests.php,5\d\5d6f259cfba5362eddf52de32ca3f48fee51e726
 S
 #app/public/views/pages/progress.php,3\d\3db93406033776ef089dd1be9eea9ccd7056354a
+[
++app/public/views/partials/quest_content.php,7\7\773dab6a048db9b5aa9f4314531ce1d721fcb017
+]
+-app/public/controllers/ProgressController.php,9\7\978362bbfe42db2d25313c06171edac2f8f466d0
+U
+%app/public/models/ProgressModel.phtml,4\c\4cd36a6d47e08d8a997c60bb4f45230dca1a88ec
+S
+#app/public/models/ProgressModel.php,b\4\b4a99f46c3a84dcf864a0c16d2228f306d4b1617
+W
+'app/public/assets/enums/QuestStatus.php,a\6\a6e5606197b647bfbdc07f37cec5e095049cab4f

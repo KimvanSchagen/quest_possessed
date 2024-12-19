@@ -26,6 +26,25 @@ class QuestModel extends BaseModel {
         }
     }
 
+    public function getById($quest_id) {
+        $query = "SELECT quest_id, name, description, creator_id, created_at, public
+                    FROM quests
+                    WHERE quest_id LIKE :questid";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':questid', $quest_id);
+
+        $stmt->execute();
+
+        $quest = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($quest) {
+            return $quest;
+        }
+        else {
+            return null;
+        }
+    }
+
     public function getByUser($id): ?array
     {
         $query = "SELECT quest_id, name, description, creator_id, created_at, public
@@ -83,6 +102,25 @@ class QuestModel extends BaseModel {
 
         if ($quests) {
             return $quests;
+        }
+        else {
+            return null;
+        }
+    }
+
+    public function getStagesByQuest($quest_id) {
+        $query = "SELECT stage_id, quest_id, name, description, achievement_points
+                    FROM stages
+                    WHERE quest_id = :questId";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':questId', $quest_id);
+
+        $stmt->execute();
+
+        $stages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if($stages) {
+            return $stages;
         }
         else {
             return null;

@@ -37,7 +37,7 @@
                         <td><?php echo htmlspecialchars(date('d-m-Y', strtotime($quest['created_at']))) ?></td>
                         <td><?php echo htmlspecialchars($quest['public'] ? 'Yes' : 'No') ?></td>
                         <td>
-                            <a href="/viewQuest?id=<?php echo urlencode($quest['quest_id']) ?>&returnUrl=/create"><button>View</button></a>
+                            <a href="/quest?id=<?php echo urlencode($quest['quest_id']) ?>"><button>View</button></a>
                         </td>
                     </tr>
                 <?php
