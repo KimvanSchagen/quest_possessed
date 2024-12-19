@@ -1,6 +1,6 @@
 <div>
     <div class="grid">
-        <div>
+        <div class="welcome_image">
             <img src="/assets/img/login_register_image.jpg" alt="Welcome">
         </div>
         <div>

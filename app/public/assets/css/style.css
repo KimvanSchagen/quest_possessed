@@ -1,3 +1,7 @@
+.welcome_image img {
+    border-radius: 30px;
+}
+
 .profile-container {
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +104,50 @@
     display: none;
 }
 
+#about_us {
+    background-color: #0B3954FF;
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+#about_us p, #about_us h1 {
+    color: white;
+}
+
+#faq {
+    background-color: #CE93D8      ;
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    color: black;
+}
+
+#faq p, #faq h1, #faq summary, #faq li {
+    color: black;
+}
+
+#joinAdventure {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#our_story {
+    background-color: #331b1a;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+#our_story p, #our_story h1 {
+    margin-left: 50px;
+}
+
+#our_story img {
+    border-radius: 25px;
+    margin: 25px;
+}
+
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;
@@ -109,5 +157,11 @@
     .profile-info, .profile-level {
         flex: none;
         width: 100%;
+    }
+
+    #our_story img {
+        border-radius: 25px;
+        margin: 5px;
+        width: auto;
     }
 }

@@ -115,3 +115,9 @@ b
 2app/public/views/partials/edit_profile_picture.php,a\4\a4bc75591e5fc6e3d91513c0ed56392858cf51ed
 [
 +app/public/views/partials/edit_password.php,6\6\66790f42f6b61f911bec7e6008309ffe6e861014
+K
+app/public/routes/about.php,3\f\3fd4c2aeeb862ce711e83015ba56df380d5d9631
+P
+ app/public/views/pages/about.php,a\f\af244f7b01bf6dd2b586f0241922b61198686367
+[
++app/public/views/partials/about_content.php,1\a\1a4e6d9554fd95bbdb8dd4b4dab072b2f375ad06
