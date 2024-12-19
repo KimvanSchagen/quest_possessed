@@ -4,6 +4,7 @@ require_once(__DIR__ . '/../../lib/auth.php');
 
 
     <!DOCTYPE html>
+    <!--data-theme="light"-->
 <html lang="en">
 
 <head>

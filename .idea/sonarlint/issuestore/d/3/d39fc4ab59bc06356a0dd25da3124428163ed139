@@ -1,10 +1,13 @@
 
-k	php:S1172"0Remove the unused function parameter "$questId".(é¾¦J$d0fa6b19-9dc5-4fb2-b59b-b94546a30026
-f	php:S2003"&Replace "require" with "require_once".(ïù¹„ùÿÿÿÿJ$6291499e-422c-4587-b022-b9527b9785b5
-m	php:S2003"&Replace "require" with "require_once".(èøŠÇúÿÿÿÿ8Ü‡Á¤½2J$3b01b9ed-7b4d-4738-a49b-fd05e8319390
-|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8Íà²¤½2J$60a6b76d-4c7a-4e19-91e4-d51a7afe3e4a
-w	php:S6600"0Remove the parentheses from this "require" call.(ïù¹„ùÿÿÿÿ8¿ì¼¤½2J$33ae0c7e-b435-4379-8254-65c7b943a95a
-w	php:S6600"0Remove the parentheses from this "require" call.(èøŠÇúÿÿÿÿ8Ü‡Á¤½2J$5d2909ab-34a0-4775-bc5b-28b993f662da
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8Íà²¤½2J$4289444c-1dd9-484e-9fe0-8d4936cf04de
-Œ	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ïù¹„ùÿÿÿÿJ$e92d3987-1706-4f40-8736-0e85f8bd3df8
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(èøŠÇúÿÿÿÿ8Ü‡Á¤½2J$7a2787f7-84ab-4d16-bda2-6f566516f2e6
+	php:S1192"LDefine a constant instead of duplicating this literal "Location: /" 3 times.(µºöº8¶ıû½2J$27fd49a9-b7b2-4a7b-8d81-cc98018c9dc6
+s	php:S1481"1Remove this unused "$returnRoute" local variable.(öéÁ³8¶ıû½2J$3c756039-7ba4-4b6d-a991-7388177dd729
+m	php:S2003"&Replace "require" with "require_once".(ïù¹„ùÿÿÿÿ8¶ıû½2J$33dc49cc-101c-4fe5-a5e6-6d8b32577bdd
+m	php:S2003"&Replace "require" with "require_once".(èøŠÇúÿÿÿÿ8¶ıû½2J$15c2bf8e-80fb-4f8d-a441-5d667da87fc7
+|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8¶ıû½2J$60fff38b-fc81-4897-851b-dcdc4668c6ad
+|	php:S6600"5Remove the parentheses from this "require_once" call.(Üßëáüÿÿÿÿ8¶ıû½2J$ce8782b2-852d-451e-aa0c-47be496d8673
+w	php:S6600"0Remove the parentheses from this "require" call.(ïù¹„ùÿÿÿÿ8¶ıû½2J$fbe19bfd-fac8-4ca7-adb2-0397769ca97e
+w	php:S6600"0Remove the parentheses from this "require" call.(èøŠÇúÿÿÿÿ8¶ıû½2J$5ae88012-2452-42d8-a4f0-e8e8fbe0f036
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8¶ıû½2J$ee347abc-bc34-4b30-8354-1a53b43df3e1
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Üßëáüÿÿÿÿ8¶ıû½2J$cf5d76a8-8300-46b1-aa5a-af1a314f459a
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ïù¹„ùÿÿÿÿ8¶ıû½2J$b40add0d-f489-4cef-9584-c264a5975180
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(èøŠÇúÿÿÿÿ8¶ıû½2J$892ff38f-8981-4fbe-88e9-5ddb30554f3e

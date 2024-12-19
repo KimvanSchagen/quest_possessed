@@ -1,0 +1,8 @@
+
+I	php:S1172"/Remove the unused function parameter "$userId".(ÖÈ€±üÿÿÿÿ
+@	php:S2003"&Replace "require" with "require_once".( °âÏùÿÿÿÿ
+;	php:S2003"&Replace "require" with "require_once".(É½Ý¥
+J	php:S6600"0Remove the parentheses from this "require" call.( °âÏùÿÿÿÿ
+E	php:S6600"0Remove the parentheses from this "require" call.(É½Ý¥
+f	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.( °âÏùÿÿÿÿ
+a	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(É½Ý¥
