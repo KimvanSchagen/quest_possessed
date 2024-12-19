@@ -1,7 +1,6 @@
-<div class="grid">
-    <h2>Quest: </h2>
-    <button class="secondary">< Back</button>
-</div>
+<script src="/assets/js/dialog.js"></script>
+
+<h2>Quest: </h2>
 
 <div id="quest_overview">
     <h1><?php echo htmlspecialchars($quest['name']) ?></h1>
@@ -69,9 +68,25 @@
         if (isManager() || $isOwner) {
             ?>
             <button>Edit Quest</button>
-            <button>Delete Quest</button>
+            <button onclick="openDeleteQuest()">Delete Quest</button>
         <?php
         }
         ?>
     </div>
 </div>
+
+<dialog id="deleteQuest">
+    <article>
+        <header>
+            <button onclick="closeDeleteQuest()" aria-label="Close" rel="prev"></button>
+            <p>
+                <strong>Delete Quest/strong>
+            </p>
+        </header>
+        <p>Are you sure you want to delete this quest?</p>
+        <div class="grid">
+            <a href="/quest/delete?id=<?php echo urlencode($quest['quest_id']) ?>"><button>Yes</button></a>
+            <button onclick="closeDeleteQuest()">No</button>
+        </div>
+    </article>
+</dialog>

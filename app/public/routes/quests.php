@@ -44,7 +44,37 @@ Route::add('/quest', function () {
     else {
         header("Location: /");
     }
+});
 
+Route::add('/quest/delete', function () {
+    if(isLoggedIn()) {
+        $questId = $_GET['id'] ?? null;
+        $user = $_SESSION['user'];
+
+        if (!$questId) {
+            header("Location: /");
+            exit;
+        }
+        $questController = new QuestController();
+        $quest = $questController->getById($questId);
+        if ($quest['creator_id'] != $user['id'] && !isManager()) {
+            header("Location: /");
+            exit;
+        }
+        else {
+            $questController->deleteQuest($questId);
+            if (isManager()) {
+                header("Location: /quests");
+            }
+            else {
+                header("Location: /create");
+            }
+            exit;
+        }
+    }
+    else {
+        header("Location: /");
+    }
 
 });
 

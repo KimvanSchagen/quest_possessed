@@ -193,6 +193,10 @@
     text-decoration: none;
 }
 
+#deleteQuest a button {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;

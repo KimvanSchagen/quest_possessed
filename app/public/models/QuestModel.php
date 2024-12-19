@@ -65,7 +65,8 @@ class QuestModel extends BaseModel {
         }
     }
 
-    public function getCompletedByUser($id) {
+    public function getCompletedByUser($id): ?array
+    {
         $query = "SELECT q.quest_id, q.name, q.description, q.creator_id, q.created_at, uqc.completed_at
                     FROM quests q
                     INNER JOIN user_quest_completion uqc ON q.quest_id = uqc.quest_id
@@ -85,7 +86,8 @@ class QuestModel extends BaseModel {
         }
     }
 
-    public function getOngoingByUser($id) {
+    public function getOngoingByUser($id): ?array
+    {
         $query = "SELECT q.quest_id, q.name AS quest_name, q.description AS quest_description, q.creator_id,
                     q.created_at, uqp.current_stage_id, s.name AS current_stage_name, 
                     s.description AS current_stage_description, s.achievement_points AS stage_achievement_points
@@ -108,7 +110,8 @@ class QuestModel extends BaseModel {
         }
     }
 
-    public function getStagesByQuest($quest_id) {
+    public function getStagesByQuest($quest_id): ?array
+    {
         $query = "SELECT stage_id, quest_id, name, description, achievement_points
                     FROM stages
                     WHERE quest_id = :questId";
@@ -125,5 +128,20 @@ class QuestModel extends BaseModel {
         else {
             return null;
         }
+    }
+
+    public function deleteStagesByQuest($quest_id) {
+        $query = "DELETE FROM stages WHERE quest_id = :questId";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':questId', $quest_id);
+        $stmt->execute();
+    }
+
+    public function deleteQuest($quest_id): void
+    {
+        $query = "DELETE FROM quests WHERE quest_id = :questId";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':questId', $quest_id);
+        $stmt->execute();
     }
 }

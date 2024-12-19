@@ -47,4 +47,9 @@ class QuestController {
             return QuestStatus::Not_Started;
         }
     }
+
+    public function deleteQuest($quest_id) {
+        $this->questModel->deleteStagesByQuest($quest_id);
+        $this->questModel->deleteQuest($quest_id);
+    }
 }
