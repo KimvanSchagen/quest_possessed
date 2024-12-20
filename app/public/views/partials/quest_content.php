@@ -2,7 +2,7 @@
 
 <h2>Quest: </h2>
 
-<div id="quest_overview">
+<div class="quest_view">
     <h1><?php echo htmlspecialchars($quest['name']) ?></h1>
     <div class="grid">
         <p><em>Created on: <?php echo htmlspecialchars(date('d-m-Y', strtotime($quest['created_at']))) ?></em></p>
@@ -80,7 +80,7 @@
         <header>
             <button onclick="closeDeleteQuest()" aria-label="Close" rel="prev"></button>
             <p>
-                <strong>Delete Quest/strong>
+                <strong>Delete Quest</strong>
             </p>
         </header>
         <p>Are you sure you want to delete this quest?</p>

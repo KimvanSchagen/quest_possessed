@@ -61,20 +61,38 @@ Route::add('/quest/delete', function () {
             header("Location: /");
             exit;
         }
+        $questController->deleteQuest($questId);
+        if (isManager()) {
+            header("Location: /quests");
+        }
         else {
-            $questController->deleteQuest($questId);
-            if (isManager()) {
-                header("Location: /quests");
-            }
-            else {
-                header("Location: /create");
-            }
+            header("Location: /create");
+        }
+        exit;
+    }
+    header("Location: /");
+});
+
+Route::add('/quest/edit', function () {
+    if(isLoggedIn()) {
+        $questId = $_GET['id'] ?? null;
+        $user = $_SESSION['user'];
+
+        if (!$questId) {
+            header("Location: /");
             exit;
         }
+        $questController = new QuestController();
+        $quest = $questController->getById($questId);
+        if ($quest['creator_id'] != $user['id'] && !isManager()) {
+            header("Location: /");
+            exit;
+        }
+        $stages = $questController->getStagesByQuest($quest['quest_id']);
+        require (__DIR__ . '/../views/pages/edit_quest.php');
     }
     else {
         header("Location: /");
     }
-
 });
 

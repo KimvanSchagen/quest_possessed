@@ -141,3 +141,9 @@ X
 (app/public/views/pages/index_manager.php,9\a\9adccec9fd9be15829d6bb5f29a36ee9f242d1e0
 b
 2app/public/views/partials/home_manager_content.php,0\b\0bb3d8ca913f88c0f6f90c1429c1a75d39545fa6
+U
+%app/public/views/pages/edit_quest.php,1\0\10edea83412866a812e7c442c76ece52c552e24b
+`
+0app/public/views/partials/edit_quest_content.php,6\7\67dcb1b7dedf6364f5f4668f8f0a72f85b36af79
+P
+ app/public/views/pages/users.php,7\4\74e9ce61fae0929f25171943e6eff89c90e6b30d
