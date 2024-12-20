@@ -31,6 +31,7 @@ require_once(__DIR__ . "/routes/register.php");
 require_once(__DIR__ . "/routes/about.php");
 require_once(__DIR__ . "/routes/quests.php");
 require_once(__DIR__ . "/routes/users.php");
+require_once (__DIR__ . "/routes/api.php");
 
 // Start the router, enabling handling requests
 Route::run();

@@ -1,28 +1,38 @@
 <?php
 
-require_once (__DIR__ . "/../models/UsersModel.php");
+require_once(__DIR__ . "/../models/UsersModel.php");
 
-class UsersController {
+class UsersController
+{
     private $usersModel;
+
     public function __construct()
     {
         $this->usersModel = new UsersModel();
     }
 
-    public function getUserCount() {
+    public function getAll(): ?array
+    {
+        return $this->usersModel->getAll();
+    }
+
+    public function getUserCount()
+    {
         return $this->usersModel->getUserCount();
     }
 
-    public function getUserById($id) {
+    public function getUserById($id)
+    {
         return $this->usersModel->getUserById($id);
-}
+    }
 
     public function getUserByUsername($username)
     {
         return $this->usersModel->getUserByUsername($username);
     }
 
-    public function getUserByEmail($email) {
+    public function getUserByEmail($email)
+    {
         return $this->usersModel->getUserByEmail($email);
     }
 
@@ -31,7 +41,8 @@ class UsersController {
         return $this->usersModel->exists($field, $value);
     }
 
-    public function editUsername($userId, $newUsername) {
+    public function editUsername($userId, $newUsername)
+    {
         $errors = [];
         if ($this->exists('username', $newUsername)) {
             $errors['username'] = "Username already exists. Please choose a different one.";
@@ -48,7 +59,8 @@ class UsersController {
         return null;
     }
 
-    public function editProfilePicture($userId, $newPicture) {
+    public function editProfilePicture($userId, $newPicture)
+    {
         if (!is_null($this->getUserById($userId))) {
             $this->usersModel->editProfilePicture($userId, $newPicture);
             $user = $this->getUserById($userId);
@@ -56,7 +68,8 @@ class UsersController {
         }
     }
 
-    public function getTop3Users() {
+    public function getTop3Users()
+    {
         return $this->usersModel->getTop3Users();
     }
 }

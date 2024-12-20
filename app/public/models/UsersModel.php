@@ -1,13 +1,33 @@
 <?php
 
-require_once (__DIR__ . "/BaseModel.php");
+require_once(__DIR__ . "/BaseModel.php");
 
-class UsersModel extends BaseModel {
-    public function __construct() {
+class UsersModel extends BaseModel
+{
+    public function __construct()
+    {
         parent::__construct();
     }
 
-    public function getUserCount() {
+    public function getAll(): ?array
+    {
+        $query = "SELECT id, username, email, permissions, date_created, level, current_points
+                    FROM users
+                    ORDER BY date_created DESC";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->execute();
+
+        $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if ($users) {
+            return $users;
+        } else {
+            return null;
+        }
+    }
+
+    public function getUserCount()
+    {
         $query = "SELECT COUNT(*)
                     FROM users";
         $stmt = self::$pdo->prepare($query);
@@ -17,13 +37,13 @@ class UsersModel extends BaseModel {
 
         if ($count) {
             return $count;
-        }
-        else {
+        } else {
             return 0;
         }
     }
 
-    public function getUserById($id) {
+    public function getUserById($id)
+    {
         $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
                     WHERE id LIKE :id";
@@ -36,13 +56,13 @@ class UsersModel extends BaseModel {
 
         if ($user) {
             return $user;
-        }
-        else {
+        } else {
             return null;
         }
     }
 
-    public function getUserByUsername($username) {
+    public function getUserByUsername($username)
+    {
         $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
                     WHERE username LIKE :username";
@@ -55,13 +75,13 @@ class UsersModel extends BaseModel {
 
         if ($user) {
             return $user;
-        }
-        else {
+        } else {
             return null;
         }
     }
 
-    public function getUserByEmail($email) {
+    public function getUserByEmail($email)
+    {
         $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
                     WHERE email LIKE :email";
@@ -74,8 +94,7 @@ class UsersModel extends BaseModel {
 
         if ($user) {
             return $user;
-        }
-        else {
+        } else {
             return null;
         }
     }
@@ -89,7 +108,8 @@ class UsersModel extends BaseModel {
         return $stmt->fetchColumn() > 0;
     }
 
-    public function editUsername($userId, $newUsername) {
+    public function editUsername($userId, $newUsername)
+    {
 
     }
 
@@ -102,7 +122,8 @@ class UsersModel extends BaseModel {
         $stmt->execute();
     }
 
-    public function getTop3Users() {
+    public function getTop3Users()
+    {
         $query = "SELECT username, level, current_points, profile_picture
                     FROM users
                     ORDER BY level DESC, current_points DESC
@@ -114,8 +135,7 @@ class UsersModel extends BaseModel {
 
         if ($users) {
             return $users;
-        }
-        else {
+        } else {
             return null;
         }
     }

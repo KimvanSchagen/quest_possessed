@@ -68,7 +68,9 @@
                 possibilities. Whether you're a seasoned adventurer or a novice explorer, there's a quest waiting for
                 you.
             </p>
-            <a href="/register"><button>Join the Adventure</button></a>
+            <a href="/register">
+                <button>Join the Adventure</button>
+            </a>
         </div>
     <?php }
     ?>

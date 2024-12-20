@@ -6,8 +6,7 @@ require_once(__DIR__ . '/../lib/auth.php');
 Route::add('/register', function () {
     if (!isLoggedIn()) {
         require(__DIR__ . "/../views/pages/register.php");
-    }
-    else {
+    } else {
         header("Location: /");
         exit;
     }
@@ -19,8 +18,7 @@ Route::add('/register', function () {
     if (is_null($errors)) {
         header("Location: /");
         exit;
-    }
-    else {
+    } else {
         require(__DIR__ . "/../views/pages/register.php");
     }
 }, ["post"]);

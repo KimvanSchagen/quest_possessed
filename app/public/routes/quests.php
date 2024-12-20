@@ -1,15 +1,14 @@
 <?php
 
 require_once(__DIR__ . '/../lib/auth.php');
-require_once (__DIR__ . "/../assets/enums/QuestStatus.php");
-require_once (__DIR__ . '/../controllers/QuestController.php');
-require_once (__DIR__ . '/../controllers/UsersController.php');
+require_once(__DIR__ . "/../assets/enums/QuestStatus.php");
+require_once(__DIR__ . '/../controllers/QuestController.php');
+require_once(__DIR__ . '/../controllers/UsersController.php');
 
 Route::add('/quests', function () {
     if (isManager()) {
         require(__DIR__ . "/../views/pages/quests.php");
-    }
-    else {
+    } else {
         header("Location: /");
         exit;
     }
@@ -33,21 +32,19 @@ Route::add('/quest', function () {
             $isOwner = false;
             $userController = new UsersController();
             $owner = $userController->getUserById($quest['creator_id']);
-        }
-        else {
+        } else {
             $isOwner = true;
         }
         $status = $questController->getQuestStatusByUser($questId, $user['id']);
         $stages = $questController->getStagesByQuest($quest['quest_id']);
         require(__DIR__ . "/../views/pages/quest.php");
-    }
-    else {
+    } else {
         header("Location: /");
     }
 });
 
 Route::add('/quest/delete', function () {
-    if(isLoggedIn()) {
+    if (isLoggedIn()) {
         $questId = $_GET['id'] ?? null;
         $user = $_SESSION['user'];
 
@@ -64,8 +61,7 @@ Route::add('/quest/delete', function () {
         $questController->deleteQuest($questId);
         if (isManager()) {
             header("Location: /quests");
-        }
-        else {
+        } else {
             header("Location: /create");
         }
         exit;
@@ -74,7 +70,7 @@ Route::add('/quest/delete', function () {
 });
 
 Route::add('/quest/edit', function () {
-    if(isLoggedIn()) {
+    if (isLoggedIn()) {
         $questId = $_GET['id'] ?? null;
         $user = $_SESSION['user'];
 
@@ -89,9 +85,8 @@ Route::add('/quest/edit', function () {
             exit;
         }
         $stages = $questController->getStagesByQuest($quest['quest_id']);
-        require (__DIR__ . '/../views/pages/edit_quest.php');
-    }
-    else {
+        require(__DIR__ . '/../views/pages/edit_quest.php');
+    } else {
         header("Location: /");
     }
 });

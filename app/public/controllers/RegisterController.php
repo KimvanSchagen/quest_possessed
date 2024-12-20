@@ -1,11 +1,13 @@
 <?php
 
-require_once (__DIR__ . "/../models/RegisterModel.php");
-require_once (__DIR__ . "/UsersController.php");
+require_once(__DIR__ . "/../models/RegisterModel.php");
+require_once(__DIR__ . "/UsersController.php");
 
-class RegisterController {
+class RegisterController
+{
     private $registermodel;
     private $userscontroller;
+
     public function __construct()
     {
         $this->registermodel = new RegisterModel();

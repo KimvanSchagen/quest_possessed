@@ -11,8 +11,7 @@
             ?>
             <p>Created by: <?php echo htmlspecialchars($owner['username']) ?></p>
             <?php
-        }
-        else {
+        } else {
             ?>
             <p>
                 <?php
@@ -21,11 +20,10 @@
                     <i class="fa-solid fa-users"></i>
                     <?php
 
-                }
-                else {
+                } else {
                     ?>
                     <i class="fa-solid fa-lock"></i>
-                <?php
+                    <?php
                 }
                 echo htmlspecialchars($quest['public'] ? 'Public' : 'Private')
                 ?> quest
@@ -49,7 +47,7 @@
             <p><?php echo htmlspecialchars($stage['achievement_points']) ?></p>
         </div>
         <hr>
-    <?php
+        <?php
     }
     ?>
     <h3>Status: <?php echo htmlspecialchars($status->value) ?></h3>
@@ -58,7 +56,7 @@
         if ($status == QuestStatus::Not_Started) {
             ?>
             <button>Start Quest</button>
-        <?php
+            <?php
         }
         if ($status == QuestStatus::Ongoing) {
             ?>
@@ -67,9 +65,11 @@
         }
         if (isManager() || $isOwner) {
             ?>
-            <a href="/quest/edit/?id=<?php echo urlencode($quest['quest_id']) ?>"><button>Edit Quest</button></a>
+            <a href="/quest/edit/?id=<?php echo urlencode($quest['quest_id']) ?>">
+                <button>Edit Quest</button>
+            </a>
             <button onclick="openDeleteQuest()">Delete Quest</button>
-        <?php
+            <?php
         }
         ?>
     </div>
@@ -85,7 +85,9 @@
         </header>
         <p>Are you sure you want to delete this quest?</p>
         <div class="grid">
-            <a href="/quest/delete?id=<?php echo urlencode($quest['quest_id']) ?>"><button>Yes</button></a>
+            <a href="/quest/delete?id=<?php echo urlencode($quest['quest_id']) ?>">
+                <button>Yes</button>
+            </a>
             <button onclick="closeDeleteQuest()">No</button>
         </div>
     </article>

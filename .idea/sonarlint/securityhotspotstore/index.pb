@@ -147,3 +147,13 @@ U
 0app/public/views/partials/edit_quest_content.php,6\7\67dcb1b7dedf6364f5f4668f8f0a72f85b36af79
 P
  app/public/views/pages/users.php,7\4\74e9ce61fae0929f25171943e6eff89c90e6b30d
+[
++app/public/views/partials/users_content.php,e\2\e2968a21c90a2a941e57d57cfa93497c11852404
+M
+app/public/assets/js/users.js,7\b\7b5e263373556beac110ca5f0c327b92b9a830b7
+I
+app/public/routes/api.php,9\b\9b9eb3934f4d1342b9f9e3e26d42e32753efac4e
+^
+.app/public/views/partials/progress_content.php,e\8\e899440efc9ce14e394783901aab1f639a15d4d9
+\
+,app/public/views/partials/quests_content.php,d\3\d3dc5fdc9e2e66005956ba330c2e058fbdab40cf

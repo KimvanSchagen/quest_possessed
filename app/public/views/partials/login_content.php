@@ -13,7 +13,8 @@
                         <span style="color: red;"><?= htmlspecialchars($errors['email']) ?></span>
                     <?php endif; ?>
                     <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required/>
+                    <input id="password" name="password" type="password" placeholder="Password"
+                           autocomplete="current-password" required/>
                     <?php if (!empty($errors['password'])): ?>
                         <span style="color: red;"><?= htmlspecialchars($errors['password']) ?></span>
                     <?php endif; ?>

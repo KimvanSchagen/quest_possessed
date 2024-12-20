@@ -1,13 +1,12 @@
 <?php
 require_once(__DIR__ . '/../lib/auth.php');
 require_once(__DIR__ . "/../controllers/QuestController.php");
-require_once (__DIR__ . "/../controllers/UsersController.php");
+require_once(__DIR__ . "/../controllers/UsersController.php");
 
 Route::add('/', function () {
     if (!isManager()) {
         require(__DIR__ . "/../views/pages/index.php");
-    }
-    else {
+    } else {
         $userController = new UsersController();
         $questController = new QuestController();
         $user = $_SESSION['user'];

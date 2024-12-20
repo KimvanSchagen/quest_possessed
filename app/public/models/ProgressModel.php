@@ -1,14 +1,16 @@
 <?php
 
-require_once (__DIR__ . "/BaseModel.php");
+require_once(__DIR__ . "/BaseModel.php");
 
-class ProgressModel extends BaseModel {
+class ProgressModel extends BaseModel
+{
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function isOngoingByUser($quest_id, $user_id) {
+    public function isOngoingByUser($quest_id, $user_id)
+    {
         $query = "SELECT user_id, quest_id, current_stage_id
                     FROM user_quest_progress
                     WHERE quest_id = :questId AND user_id = :userId";
@@ -20,15 +22,15 @@ class ProgressModel extends BaseModel {
 
         $progress = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if($progress) {
+        if ($progress) {
             return $progress;
-        }
-        else {
+        } else {
             return null;
         }
     }
 
-    public function isFinishedByUser($quest_id, $user_id) {
+    public function isFinishedByUser($quest_id, $user_id)
+    {
         $query = "SELECT user_id, quest_id, completed_at
                     FROM user_quest_completion
                     WHERE quest_id = :questId AND user_id = :userId";
@@ -40,10 +42,9 @@ class ProgressModel extends BaseModel {
 
         $progress = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if($progress) {
+        if ($progress) {
             return $progress;
-        }
-        else {
+        } else {
             return null;
         }
 

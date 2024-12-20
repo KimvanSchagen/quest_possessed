@@ -31,7 +31,7 @@
                     <p>Level: <?php echo $user['level'] ?></p>
                     <p>Points: <?php echo $user['current_points'] ?></p>
                 </div>
-            <?php
+                <?php
             }
             ?>
         </div>

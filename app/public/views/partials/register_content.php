@@ -8,7 +8,8 @@
             <form action="/register" method="post">
                 <fieldset>
                     <label for="username">Username</label>
-                    <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" required/>
+                    <input id="username" name="username" type="text" placeholder="Username" autocomplete="username"
+                           required/>
                     <?php if (!empty($errors['username'])): ?>
                         <span style="color: red;"><?= htmlspecialchars($errors['username']) ?></span>
                     <?php endif; ?>
@@ -18,7 +19,8 @@
                         <span style="color: red;"><?= htmlspecialchars($errors['email']) ?></span>
                     <?php endif; ?>
                     <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required/>
+                    <input id="password" name="password" type="password" placeholder="Password"
+                           autocomplete="current-password" required/>
                 </fieldset>
                 <input type="submit" value="Register"/>
             </form>
