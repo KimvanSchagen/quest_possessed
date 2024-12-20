@@ -67,7 +67,7 @@
         }
         if (isManager() || $isOwner) {
             ?>
-            <button>Edit Quest</button>
+            <a href="/quest/edit/?id=<?php echo urlencode($quest['quest_id']) ?>"><button>Edit Quest</button></a>
             <button onclick="openDeleteQuest()">Delete Quest</button>
         <?php
         }

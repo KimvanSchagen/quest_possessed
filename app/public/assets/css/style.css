@@ -197,6 +197,30 @@
     width: 100%;
 }
 
+.home_card {
+    background-color: #0B3954;
+    border-radius: 25px;
+    padding: 50px;
+    font-size: 25px;
+    margin: 15px;
+    min-width: 250px;
+}
+
+.home_card p {
+    color: white;
+}
+
+
+
+.top_user_card {
+    text-align: center;
+}
+
+.top_user_card img {
+    border-radius: 150px;
+    margin-bottom: 25px;
+}
+
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;

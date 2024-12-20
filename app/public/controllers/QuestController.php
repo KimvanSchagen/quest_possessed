@@ -16,6 +16,18 @@ class QuestController {
         return $this->questModel->getAll();
     }
 
+    public function getPublicQuestsCount() {
+        return $this->questModel->getPublicQuestsCount();
+    }
+
+    public function getOngoingQuestCount() {
+        return $this->questModel->getOngoingQuestsCount();
+    }
+
+    public function getCompletedQuestCount() {
+        return $this->questModel->getCompletedQuestsCount();
+    }
+
     public function getById($quest_id) {
         return $this->questModel->getById($quest_id);
     }

@@ -26,6 +26,55 @@ class QuestModel extends BaseModel {
         }
     }
 
+    public function getOngoingQuestsCount() {
+        $query = "SELECT COUNT(*)
+                    FROM user_quest_progress";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->execute();
+
+        $count = $stmt->fetch(PDO::FETCH_COLUMN);
+
+        if ($count) {
+            return $count;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    public function getCompletedQuestsCount() {
+        $query = "SELECT COUNT(*)
+                    FROM user_quest_completion";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->execute();
+
+        $count = $stmt->fetch(PDO::FETCH_COLUMN);
+
+        if ($count) {
+            return $count;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    public function getPublicQuestsCount() {
+        $query = "SELECT COUNT(*)
+                    FROM quests
+                    WHERE public = 1";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->execute();
+
+        $count = $stmt->fetch(PDO::FETCH_COLUMN);
+
+        if ($count) {
+            return $count;
+        }
+        else {
+            return 0;
+        }
+    }
+
     public function getById($quest_id) {
         $query = "SELECT quest_id, name, description, creator_id, created_at, public
                     FROM quests

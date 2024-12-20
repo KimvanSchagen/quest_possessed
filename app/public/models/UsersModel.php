@@ -7,6 +7,22 @@ class UsersModel extends BaseModel {
         parent::__construct();
     }
 
+    public function getUserCount() {
+        $query = "SELECT COUNT(*)
+                    FROM users";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->execute();
+
+        $count = $stmt->fetch(PDO::FETCH_COLUMN);
+
+        if ($count) {
+            return $count;
+        }
+        else {
+            return 0;
+        }
+    }
+
     public function getUserById($id) {
         $query = "SELECT id, username, email, password, permissions, date_created, level, current_points, profile_picture
                     FROM users
@@ -84,5 +100,23 @@ class UsersModel extends BaseModel {
         $stmt->bindParam(':picture', $newPicture);
         $stmt->bindParam(':id', $userId);
         $stmt->execute();
+    }
+
+    public function getTop3Users() {
+        $query = "SELECT username, level, current_points, profile_picture
+                    FROM users
+                    ORDER BY level DESC, current_points DESC
+                    LIMIT 3";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->execute();
+
+        $users = $stmt->fetchall(PDO::FETCH_ASSOC);
+
+        if ($users) {
+            return $users;
+        }
+        else {
+            return null;
+        }
     }
 }

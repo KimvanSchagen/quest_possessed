@@ -9,6 +9,10 @@ class UsersController {
         $this->usersModel = new UsersModel();
     }
 
+    public function getUserCount() {
+        return $this->usersModel->getUserCount();
+    }
+
     public function getUserById($id) {
         return $this->usersModel->getUserById($id);
 }
@@ -50,5 +54,9 @@ class UsersController {
             $user = $this->getUserById($userId);
             $_SESSION['user'] = $user;
         }
+    }
+
+    public function getTop3Users() {
+        return $this->usersModel->getTop3Users();
     }
 }
