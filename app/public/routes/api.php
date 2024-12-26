@@ -29,3 +29,8 @@ Route::add('/api/edit-password', function () {
     $userController = new UsersController();
     $userController->editPassword();
 }, "POST");
+
+Route::add('/api/edit-profile-picture', function () {
+    $userController = new UsersController();
+    $userController->editProfilePicture();
+}, "POST");

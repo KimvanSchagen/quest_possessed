@@ -1,7 +1,7 @@
 <div>
     <div class="profile-container">
         <div class="profile-picture">
-            <img src="<?php echo $user['profile_picture'] ?>" alt="Profile">
+            <img src="<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile">
         </div>
         <div class="profile-info">
             <h1><?php echo htmlspecialchars($user['username'] ?? 'User'); ?></h1>
@@ -25,8 +25,8 @@
         </div>
     </div>
     <div class="progress-bar">
-        <progress value="<?php echo $user['current_points'] ?>" max="<?php echo $pointsNeeded ?>" class="achievementPoints"></progress>
-        <p><?php echo $user['current_points'] ?> / <?php echo $pointsNeeded ?></p>
+        <progress value="<?php echo htmlspecialchars($user['current_points']) ?>" max="<?php echo $pointsNeeded ?>" class="achievementPoints"></progress>
+        <p><?php echo htmlspecialchars($user['current_points']) ?> / <?php echo $pointsNeeded ?></p>
     </div>
     <div class="grid">
         <div class="profile-card">
@@ -43,8 +43,6 @@
         </div>
     </div>
 </div>
-
-<script src="/assets/js/dialog.js"></script>
 
 
 

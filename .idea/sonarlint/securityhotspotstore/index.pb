@@ -169,3 +169,5 @@ R
 "app/public/assets/js/edit_email.js,7\d\7d88c57515c2242578f3da79b61f071847e0ff3c
 U
 %app/public/assets/js/edit_password.js,9\0\90d35d8ae06d2205a69f106d83de9b4c311858fa
+\
+,app/public/assets/js/edit_profile_picture.js,a\c\ac055ac8c93af891f30e5bbb2494c2eb8de34430

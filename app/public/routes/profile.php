@@ -37,22 +37,3 @@ Route::add('/profile', function () {
         exit;
     }
 });
-
-Route::add('/edit-username', function () {
-    $userController = new UsersController();
-    $errors = $userController->editUsername($_SESSION['user']['id'], $_POST['username']);
-    if (is_null($errors)) {
-        header("Location: /");
-        exit;
-    }
-    else {
-        header("Location: /profile");
-        exit;
-    }
-}, ["post"]);
-
-Route::add('/edit-profile-picture', function () {
-    $userController = new UsersController();
-    $userController->editProfilePicture($_SESSION['user']['id'], $_POST['profilePicture']);
-    header("Location: /profile");
-}, ["post"]);

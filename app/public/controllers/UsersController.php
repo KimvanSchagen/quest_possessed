@@ -111,13 +111,22 @@ class UsersController
         $_SESSION['user'] = $user;
     }
 
-    public function editProfilePicture($userId, $newPicture)
+    public function editProfilePicture()
     {
-        if (!is_null($this->getUserById($userId))) {
-            $this->usersModel->editProfilePicture($userId, $newPicture);
-            $user = $this->getUserById($userId);
-            $_SESSION['user'] = $user;
+        $currentUser = $_SESSION['user'];
+
+        $input = file_get_contents('php://input');
+        $newPicture = json_decode($input, true);
+
+        if(!isset($newPicture)) {
+            echo json_encode(['error' => 'Select a picture.']);
+            exit;
         }
+
+        $this->usersModel->editProfilePicture($currentUser['id'], $newPicture);
+        echo json_encode(['success' => 'Profile picture updated successfully']);
+        $user = $this->getUserById($currentUser['id']);
+        $_SESSION['user'] = $user;
     }
 
     public function getTop3Users()
