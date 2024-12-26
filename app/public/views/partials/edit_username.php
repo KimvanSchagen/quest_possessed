@@ -7,16 +7,16 @@
             </p>
         </header>
         <p>Current username:</p>
-        <p><?php echo $user['username'] ?></p>
-        <form action="/edit-username" method="post">
+        <p><?php echo htmlspecialchars($user['username']); ?></p>
+        <form id="editUsernameForm">
             <fieldset>
                 <label for="username">New username</label>
                 <input id="username" name="username" type="text" placeholder="Username" required>
-                <?php if (!empty($errors['username'])): ?>
-                    <span style="color: red;"><?= htmlspecialchars($errors['username']) ?></span>
-                <?php endif; ?>
+                <span id="usernameError" style="color: red;"></span>
             </fieldset>
             <input type="submit" value="Confirm">
         </form>
     </article>
 </dialog>
+
+<script src="/assets/js/edit_username.js"></script>

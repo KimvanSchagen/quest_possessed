@@ -1,8 +1,5 @@
 
-v	php:S1172"/Remove the unused function parameter "$userId".(ÖÈ€±üÿÿÿÿ8Ğª±¾2J$6dd88e78-c531-4ccc-b752-16b101dc8dec
-m	php:S2003"&Replace "require" with "require_once".( °âÏùÿÿÿÿ8Ğª±¾2J$526f25f3-43d9-410c-bed3-5112400c6cc0
-h	php:S2003"&Replace "require" with "require_once".(É½İ¥8Ğª±¾2J$797b065d-e63b-4cc0-9216-f4190310b009
-w	php:S6600"0Remove the parentheses from this "require" call.( °âÏùÿÿÿÿ8Ğª±¾2J$8c2c9fb2-2692-4c0f-9443-d029d872dbf1
-r	php:S6600"0Remove the parentheses from this "require" call.(É½İ¥8Ğª±¾2J$53c35223-d1dc-4353-8c04-3802514a88d5
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.( °âÏùÿÿÿÿ8Ğª±¾2J$449863c3-79ab-4ed7-84ec-9c285545a8b0
-	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(É½İ¥8Ğª±¾2J$91b0b626-4305-4928-b01f-be5633528719
+`php:S113"'Add a new line at the end of this file.8Àî˜¿2J$416dcd31-bc26-4b53-9451-e37a57232fec
+m	php:S2003"&Replace "require" with "require_once".( °âÏùÿÿÿÿ8Ğª±¾2J$d7108b9c-a50f-46dd-b7f9-4bbee57f7447
+w	php:S6600"0Remove the parentheses from this "require" call.( °âÏùÿÿÿÿ8¥Şï˜¿2J$8629ff59-c2d8-4eda-b87e-d0374b85c3ae
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.( °âÏùÿÿÿÿ8Ğª±¾2J$e27c9c97-29e1-4ffb-954e-08f8eb3dbbaa

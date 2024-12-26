@@ -49,8 +49,12 @@
         <hr>
         <?php
     }
+    if (!isManager()) {
+        ?>
+        <h3>Status: <?php echo htmlspecialchars($status->value) ?></h3>
+    <?php
+    }
     ?>
-    <h3>Status: <?php echo htmlspecialchars($status->value) ?></h3>
     <div class="grid">
         <?php
         if ($status == QuestStatus::Not_Started) {

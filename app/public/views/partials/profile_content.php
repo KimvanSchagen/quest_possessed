@@ -1,4 +1,3 @@
-<script src="/assets/js/dialog.js"></script>
 <div>
     <div class="profile-container">
         <div class="profile-picture">
@@ -43,6 +42,8 @@
         </div>
     </div>
 </div>
+
+<script src="/assets/js/dialog.js"></script>
 
 
 

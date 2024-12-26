@@ -1,13 +1,3 @@
-function openEditUsername() {
-    const dialog = document.getElementById("editUsernameDialog");
-    dialog.showModal();
-}
-
-function closeEditUsername() {
-    const dialog = document.getElementById("editUsernameDialog");
-    dialog.close();
-}
-
 function openEditEmail() {
     const dialog = document.getElementById("editEmailDialog");
     dialog.showModal();
@@ -47,3 +37,6 @@ function closeDeleteQuest() {
     const dialog = document.getElementById("deleteQuest");
     dialog.close();
 }
+
+
+

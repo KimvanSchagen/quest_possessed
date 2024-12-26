@@ -41,22 +41,26 @@ class UsersController
         return $this->usersModel->exists($field, $value);
     }
 
-    public function editUsername($userId, $newUsername)
+    public function editUsername()
     {
-        $errors = [];
-        if ($this->exists('username', $newUsername)) {
-            $errors['username'] = "Username already exists. Please choose a different one.";
+        $currentUser = $_SESSION['user'];
+
+        $input = file_get_contents('php://input');
+        $newUsername = json_decode($input, true);
+
+        if (empty($newUsername)) {
+            echo json_encode(['error' => 'Enter a username']);
+            exit();
         }
-        if (!empty($errors)) {
-            return $errors; // Return errors to the view
+        if ($this->exists("username", $newUsername)) {
+            echo json_encode(['error' => 'Username already taken']);
+            exit;
         }
 
-        $this->usersModel->editUsername($userId, $newUsername);
-        $user = $this->getUserByUsername($newUsername);
-
+        $this->usersModel->editUsername($currentUser['id'], $newUsername);
+        echo json_encode(['success' => 'Username updated successfully']);
+        $user = $this->getUserById($currentUser['id']);
         $_SESSION['user'] = $user;
-
-        return null;
     }
 
     public function editProfilePicture($userId, $newPicture)

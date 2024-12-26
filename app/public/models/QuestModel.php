@@ -10,8 +10,9 @@ class QuestModel extends BaseModel {
 
     public function getAll(): ?array
     {
-        $query = "SELECT quest_id, name, description, creator_id, created_at, public
-                    FROM quests";
+        $query = "SELECT q.quest_id, q.name, q.description, q.creator_id, q.created_at, q.public, u.username
+                    FROM quests q
+                    INNER JOIN users u ON q.creator_id = u.id";
         $stmt = self::$pdo->prepare($query);
 
         $stmt->execute();

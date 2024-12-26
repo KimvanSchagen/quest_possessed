@@ -157,3 +157,11 @@ I
 .app/public/views/partials/progress_content.php,e\8\e899440efc9ce14e394783901aab1f639a15d4d9
 \
 ,app/public/views/partials/quests_content.php,d\3\d3dc5fdc9e2e66005956ba330c2e058fbdab40cf
+N
+app/public/assets/js/quests.js,6\3\6301a4156de3c1b15ac30b393021ad90daeece38
+U
+%app/public/assets/js/edit_username.js,e\f\ef2cb5fa3ee95054d63cb8f0949c0328b2dc40f0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

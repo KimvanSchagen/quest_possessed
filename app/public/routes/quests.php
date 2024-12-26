@@ -26,7 +26,7 @@ Route::add('/quest', function () {
         $questController = new QuestController();
         $quest = $questController->getById($questId);
         if ($quest['creator_id'] != $user['id']) {
-            if ($quest['public'] == 0) {
+            if ($quest['public'] == 0 && !isManager()) {
                 header("Location: /");
             }
             $isOwner = false;

@@ -21,7 +21,9 @@ async function fetchAndDisplayUsers() {
             <td>${user.permissions}</td>
             <td>${user.date_created}</td>
             <td>${user.level}</td>
-            <td>${user.current_points}</td>`;
+            <td>${user.current_points}</td>
+            <td><a href="/user/delete">Delete</a></td>
+            <td><a href="/user/admin">Make admin</a></td>`;
             usersContainer.appendChild(userRow);
         });
     } catch (error) {
