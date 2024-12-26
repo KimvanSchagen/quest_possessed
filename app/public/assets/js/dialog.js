@@ -1,13 +1,3 @@
-function openEditPassword() {
-    const dialog = document.getElementById("editPasswordDialog");
-    dialog.showModal();
-}
-
-function closeEditPassword() {
-    const dialog = document.getElementById("editPasswordDialog");
-    dialog.close();
-}
-
 function openEditProfilePicture() {
     const dialog = document.getElementById("editProfilePictureDialog");
     dialog.showModal();

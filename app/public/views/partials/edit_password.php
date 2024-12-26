@@ -6,13 +6,11 @@
                 <strong>Change password</strong>
             </p>
         </header>
-        <form action="/edit-password" method="post">
+        <form id="editPasswordForm">
             <fieldset>
                 <label for="oldPassword">Enter old password</label>
                 <input id="oldPassword" name="oldPassword" type="password" required>
-                <?php if (!empty($errors['password'])): ?>
-                    <span style="color: red;"><?= htmlspecialchars($errors['password']) ?></span>
-                <?php endif; ?>
+                <span id="passwordError" style="color: red;"></span>
                 <label for="newPassword">New password</label>
                 <input id="newPassword" name="newPassword" type="password" required>
             </fieldset>
@@ -20,3 +18,5 @@
         </form>
     </article>
 </dialog>
+
+<script src="/assets/js/edit_password.js"></script>

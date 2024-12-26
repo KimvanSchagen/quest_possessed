@@ -1,3 +1,4 @@
 
-w	php:S6600"5Remove the parentheses from this "require_once" call.(Ù®‚8ÙŒ³—À2J$5bac119f-2aef-4138-915c-da6eaae6947c
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ù®‚8ÙŒ³—À2J$883de59b-ac98-43da-ad7a-21337ee1a422
+“	php:S11920"LDefine a constant instead of duplicating this literal "php://input" 3 times.(ï­ã•ıÿÿÿÿ8…øÈ™À2J$2d8fbc0e-2174-4c0a-9a2d-7a271480c923
+w	php:S6600"5Remove the parentheses from this "require_once" call.(Ù®‚8…øÈ™À2J$bd0e2949-ad47-486f-a2d1-60a62223655a
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ù®‚8…øÈ™À2J$9994cdb0-a3bd-4b56-8ab2-86a41b78a266

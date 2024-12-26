@@ -108,7 +108,7 @@ class UsersModel extends BaseModel
         return $stmt->fetchColumn() > 0;
     }
 
-    public function editUsername($userId, $newUsername)
+    public function editUsername($userId, $newUsername): void
     {
         $query = "UPDATE users SET username = :username WHERE id = :id";
         $stmt = self::$pdo->prepare($query);
@@ -117,7 +117,8 @@ class UsersModel extends BaseModel
         $stmt->execute();
     }
 
-    public function editEmail($userId, $newEmail) {
+    public function editEmail($userId, $newEmail): void
+    {
         $query = "UPDATE users SET email = :email WHERE id = :id";
         $stmt = self::$pdo->prepare($query);
         $stmt->bindParam(':email', $newEmail);
@@ -134,7 +135,15 @@ class UsersModel extends BaseModel
         $stmt->execute();
     }
 
-    public function getTop3Users()
+    public function editPassword($userId, $newPassword) {
+        $query = "UPDATE users SET password = :password WHERE id = :id";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':password', $newPassword);
+        $stmt->bindParam(':id', $userId);
+        $stmt->execute();
+    }
+
+    public function getTop3Users(): ?array
     {
         $query = "SELECT username, level, current_points, profile_picture
                     FROM users

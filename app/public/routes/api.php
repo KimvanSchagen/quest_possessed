@@ -15,12 +15,17 @@ Route::add('/api/quests', function () {
     echo json_encode($quests);
 });
 
-Route::add('/api/check-username', function () {
+Route::add('/api/edit-username', function () {
     $userController = new UsersController();
     $userController->editUsername();
 }, "POST");
 
-Route::add('/api/check-email', function () {
+Route::add('/api/edit-email', function () {
     $userController = new UsersController();
     $userController->editEmail();
+}, "POST");
+
+Route::add('/api/edit-password', function () {
+    $userController = new UsersController();
+    $userController->editPassword();
 }, "POST");

@@ -24,7 +24,7 @@ async function editUsername(event) {
     }
 
     try {
-        const response = await fetch ("/api/check-username", {
+        const response = await fetch ("/api/edit-username", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

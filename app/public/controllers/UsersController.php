@@ -84,6 +84,33 @@ class UsersController
         $_SESSION['user'] = $user;
     }
 
+    public function editPassword() {
+        $currentUser = $_SESSION['user'];
+
+        $input = file_get_contents('php://input');
+        $passwords = json_decode($input, true);
+
+        if (!isset($passwords['oldPassword']) || !isset($passwords['newPassword'])) {
+            echo json_encode(['error' => 'Enter values']);
+            exit;
+        }
+
+        $oldPassword = htmlspecialchars(strip_tags($passwords['oldPassword']));
+        $newPassword = htmlspecialchars(strip_tags($passwords['newPassword']));
+
+        if (!password_verify($oldPassword, $currentUser['password'])) {
+            echo json_encode(['error' => 'Old password is incorrect.']);
+            exit;
+        }
+
+        $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+
+        $this->usersModel->editPassword($currentUser['id'], $newPassword);
+        echo json_encode(['success' => 'Password updated successfully']);
+        $user = $this->getUserById($currentUser['id']);
+        $_SESSION['user'] = $user;
+    }
+
     public function editProfilePicture($userId, $newPicture)
     {
         if (!is_null($this->getUserById($userId))) {

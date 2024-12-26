@@ -167,3 +167,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 R
 "app/public/assets/js/edit_email.js,7\d\7d88c57515c2242578f3da79b61f071847e0ff3c
+U
+%app/public/assets/js/edit_password.js,9\0\90d35d8ae06d2205a69f106d83de9b4c311858fa

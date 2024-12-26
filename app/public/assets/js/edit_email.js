@@ -24,7 +24,7 @@ async function editEmail(event) {
     }
 
     try {
-        const response = await fetch ("/api/check-email", {
+        const response = await fetch ("/api/edit-email", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
