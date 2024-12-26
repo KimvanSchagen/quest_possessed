@@ -49,6 +49,7 @@
                 <span id="emailError" style="color: red;"></span>
                 <label for="password">Password</label>
                 <input id="password" name="password" type="password" required>
+                <span id="passwordError" style="color: red;"></span>
                 <label>
                     <input name="admin" type="checkbox" role="switch"/>
                     Admin

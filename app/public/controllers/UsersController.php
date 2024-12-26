@@ -41,6 +41,51 @@ class UsersController
         return $this->usersModel->exists($field, $value);
     }
 
+    public function newUser(): void
+    {
+        $input = file_get_contents('php://input');
+        $newUser = json_decode($input, true);
+
+        $username = $newUser['username'];
+        $email = $newUser['email'];
+        $password = $newUser['password'];
+        $isAdmin = $newUser['isAdmin'] ?? false;
+
+        if (empty($username)) {
+            http_response_code(400);
+            echo json_encode(["field" => "username", "message" => "Username is required."]);
+            exit;
+        }
+
+        if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            http_response_code(400);
+            echo json_encode(["field" => "email", "message" => "Valid email is required."]);
+            exit;
+        }
+
+        if (empty($password)) {
+            http_response_code(400);
+            echo json_encode(["field" => "password", "message" => "Password is required."]);
+            exit;
+        }
+
+        if ($this->exists("username", $username)) {
+            http_response_code(400);
+            echo json_encode(["field" => "username", "message" => "Username is already taken."]);
+            exit;
+        }
+
+        if ($this->exists("email", $email)) {
+            http_response_code(400);
+            echo json_encode(["field" => "email", "message" => "Email is already in use."]);
+            exit;
+        }
+
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $this->usersModel->create($username, $email, $hashedPassword, $isAdmin);
+    }
+
     public function editUsername()
     {
         $currentUser = $_SESSION['user'];

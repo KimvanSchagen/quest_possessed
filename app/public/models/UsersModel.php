@@ -108,6 +108,17 @@ class UsersModel extends BaseModel
         return $stmt->fetchColumn() > 0;
     }
 
+    public function create($username, $email, $password, $isAdmin) {
+        $permissions = $isAdmin ? 1 : 0;
+        $query = "INSERT INTO users (username, email, password, permissions) VALUES (:username, :email, :password, :permissions)";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
+        $stmt->bindParam(':permissions', $permissions);
+        $stmt->execute();
+    }
+
     public function editUsername($userId, $newUsername): void
     {
         $query = "UPDATE users SET username = :username WHERE id = :id";

@@ -50,8 +50,64 @@ async function newUser(event) {
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const isAdmin = document.querySelector('input[name="admin"]').checked;
+    const usernameError = document.getElementById("usernameError");
+    const emailError = document.getElementById("emailError");
+    const passwordError = document.getElementById("passwordError");
 
+    usernameError.textContent = '';
+    emailError.textContent = '';
 
+    if (!username) {
+        usernameError.textContent = "Enter a username";
+        return;
+    }
+    if (!email) {
+        emailError.textContent = "Enter an email";
+        return;
+    }
+    if (!password) {
+        passwordError.textContent = "Enter a password";
+        return;
+    }
+
+    const newUser = {
+        username,
+        email,
+        password,
+        isAdmin,
+    };
+
+    try {
+        const response = await fetch("/api/new-user", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newUser),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            if (errorData.field === "username") {
+                usernameError.textContent = errorData.message;
+            } else if (errorData.field === "email") {
+                emailError.textContent = errorData.message;
+            } else if (errorData.field === "password") {
+                passwordError.textContent = errorData.message;
+            }
+            else {
+                passwordError.textContent = "Failed to create user. Please try again later.";
+            }
+            return;
+        }
+
+        closeNewUserDialog();
+        await fetchAndDisplayUsers();
+    } catch (error) {
+        console.error("Error creating new user: ", error);
+        passwordError.textContent = "Failed to create user. Please try again later.";
+    }
 }
 
 async function makeAdmin(userId) {
@@ -84,6 +140,7 @@ function openMakeAdminDialog(userId) {
     };
     dialog.showModal();
 }
+
 function closeMakeAdminDialog() {
     const dialog = document.getElementById("makeAdminDialog");
     dialog.close();

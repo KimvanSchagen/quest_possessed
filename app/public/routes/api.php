@@ -15,6 +15,11 @@ Route::add('/api/quests', function () {
     echo json_encode($quests);
 });
 
+Route::add('/api/new-user', function () {
+    $userController = new UsersController();
+    $userController->newUser();
+}, "POST");
+
 Route::add('/api/edit-username', function () {
     $userController = new UsersController();
     $userController->editUsername();
