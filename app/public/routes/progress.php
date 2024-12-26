@@ -13,6 +13,7 @@ Route::add('/progress', function () {
         $pointsNeeded = $levelingSystem->getPointsNeeded($user['level']);
 
         $ongoingQuests = $questController->getOngoingByUser($user['id']);
+        $completedQuests = $questController->getCompletedByUser($user['id']);
         require(__DIR__ . "/../views/pages/progress.php");
     } else {
         header("Location: /");

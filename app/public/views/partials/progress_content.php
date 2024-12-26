@@ -28,5 +28,22 @@
 
     <div id="completed_quests">
         <h3>Completed Quests</h3>
+        <?php
+        if (is_null($completedQuests)) {
+            ?>
+        <p>You have no completed quests.</p>
+        <?php
+        }
+        else {
+            foreach ($completedQuests as $completedQuest) {
+                ?>
+                <h4><?php echo htmlspecialchars($completedQuest['name']) ?></h4>
+                <p>Date completed: <?php echo htmlspecialchars(date('d-m-Y', strtotime($completedQuest['completed_at']))) ?></p>
+                <a href="/quest?id=<?php echo urlencode($completedQuest['quest_id']) ?>"><button>View</button></a>
+                <hr>
+        <?php
+            }
+        }
+        ?>
     </div>
 </div>
