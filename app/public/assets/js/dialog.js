@@ -1,13 +1,3 @@
-function openEditEmail() {
-    const dialog = document.getElementById("editEmailDialog");
-    dialog.showModal();
-}
-
-function closeEditEmail() {
-    const dialog = document.getElementById("editEmailDialog");
-    dialog.close();
-}
-
 function openEditPassword() {
     const dialog = document.getElementById("editPasswordDialog");
     dialog.showModal();

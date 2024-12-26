@@ -7,16 +7,16 @@
             </p>
         </header>
         <p>Current email:</p>
-        <p><?php echo $user['email'] ?></p>
-        <form action="/edit-email" method="post">
+        <p><?php echo htmlspecialchars($user['email']) ?></p>
+        <form id="editEmailForm">
             <fieldset>
                 <label for="email">New email</label>
                 <input id="email" name="email" type="email" placeholder="Email" required>
-                <?php if (!empty($errors['email'])): ?>
-                    <span style="color: red;"><?= htmlspecialchars($errors['email']) ?></span>
-                <?php endif; ?>
+                <span id="emailError" style="color: red;"></span>
             </fieldset>
             <input type="submit" value="Confirm">
         </form>
     </article>
 </dialog>
+
+<script src="/assets/js/edit_email.js"></script>

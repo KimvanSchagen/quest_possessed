@@ -117,6 +117,14 @@ class UsersModel extends BaseModel
         $stmt->execute();
     }
 
+    public function editEmail($userId, $newEmail) {
+        $query = "UPDATE users SET email = :email WHERE id = :id";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':email', $newEmail);
+        $stmt->bindParam(':id', $userId);
+        $stmt->execute();
+    }
+
     public function editProfilePicture($userId, $newPicture): void
     {
         $query = "UPDATE users SET profile_picture = :picture WHERE id = :id";

@@ -63,6 +63,27 @@ class UsersController
         $_SESSION['user'] = $user;
     }
 
+    public function editEmail() {
+        $currentUser = $_SESSION['user'];
+
+        $input = file_get_contents('php://input');
+        $newEmail = json_decode($input, true);
+
+        if (empty($newEmail)) {
+            echo json_encode(['error' => 'Enter an email']);
+            exit();
+        }
+        if ($this->exists("email", $newEmail)) {
+            echo json_encode(['error' => 'Email already taken']);
+            exit;
+        }
+
+        $this->usersModel->editEmail($currentUser['id'], $newEmail);
+        echo json_encode(['success' => 'Email updated successfully']);
+        $user = $this->getUserById($currentUser['id']);
+        $_SESSION['user'] = $user;
+    }
+
     public function editProfilePicture($userId, $newPicture)
     {
         if (!is_null($this->getUserById($userId))) {

@@ -19,3 +19,8 @@ Route::add('/api/check-username', function () {
     $userController = new UsersController();
     $userController->editUsername();
 }, "POST");
+
+Route::add('/api/check-email', function () {
+    $userController = new UsersController();
+    $userController->editEmail();
+}, "POST");

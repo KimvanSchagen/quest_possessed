@@ -6,6 +6,7 @@
         <div class="profile-info">
             <h1><?php echo htmlspecialchars($user['username'] ?? 'User'); ?></h1>
             <p>Adventurer ID: <?php echo htmlspecialchars($user['id'] ?? '-'); ?></p>
+            <p>Email: <?php echo htmlspecialchars($user['email'] ?? '-'); ?></p>
             <p>Date registered: <?php echo htmlspecialchars(date('d M Y', strtotime($user['date_created'] ?? '1970-01-01'))); ?></p>
             <details class="dropdown">
                 <summary role="button">
