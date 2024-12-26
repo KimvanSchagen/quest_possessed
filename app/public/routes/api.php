@@ -34,3 +34,8 @@ Route::add('/api/edit-profile-picture', function () {
     $userController = new UsersController();
     $userController->editProfilePicture();
 }, "POST");
+
+Route::add('/api/make-admin', function () {
+    $userController = new UsersController();
+    $userController->makeAdmin();
+}, "POST");

@@ -8,7 +8,7 @@
         <div class="grid">
             <p></p>
             <p>18 users</p>
-            <button><i class="fa-solid fa-user-plus"></i> New user</button>
+            <button onclick="openNewUserDialog()"><i class="fa-solid fa-user-plus"></i> New user</button>
         </div>
     </div>
     <br>
@@ -31,20 +31,62 @@
     </table>
 </div>
 
-<dialog id="deleteUser">
+<dialog id="newUserDialog">
     <article>
         <header>
-            <button onclick="closeDeleteUser()" aria-label="Close" rel="prev"></button>
+            <button onclick="closeNewUserDialog()" aria-label="Close" rel="prev"></button>
+            <p>
+                <strong>New User</strong>
+            </p>
+        </header>
+        <form id="newUserForm">
+            <fieldset>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Username" required>
+                <span id="usernameError" style="color: red;"></span>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+                <span id="emailError" style="color: red;"></span>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required>
+                <label>
+                    <input name="admin" type="checkbox" role="switch"/>
+                    Admin
+                </label>
+            </fieldset>
+            <input type="submit" value="Create new user">
+        </form>
+    </article>
+</dialog>
+
+<dialog id="deleteUserDialog">
+    <article>
+        <header>
+            <button onclick="closeDeleteUserDialog()" aria-label="Close" rel="prev"></button>
             <p>
                 <strong>Delete User</strong>
             </p>
         </header>
         <p>Are you sure you want to delete this user?</p>
         <div class="grid">
-            <a href="/user/delete?id=<?php echo urlencode($quest['quest_id']) ?>">
-                <button>Yes</button>
-            </a>
-            <button onclick="closeDeleteUser()">No</button>
+            <button onclick="deleteUser()">Yes</button>
+            <button onclick="closeDeleteUserDialog()">No</button>
+        </div>
+    </article>
+</dialog>
+
+<dialog id="makeAdminDialog">
+    <article>
+        <header>
+            <button onclick="closeMakeAdminDialog()" aria-label="Close" rel="prev"></button>
+            <p>
+                <strong>Make Admin</strong>
+            </p>
+        </header>
+        <p>Are you sure you want to make this user admin?</p>
+        <div class="grid">
+            <button id="confirmMakeAdmin">Yes</button>
+            <button onclick="closeMakeAdminDialog()">No</button>
         </div>
     </article>
 </dialog>

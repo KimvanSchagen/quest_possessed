@@ -160,4 +160,12 @@ class UsersModel extends BaseModel
             return null;
         }
     }
+
+    public function makeAdmin($userId): void
+    {
+        $query = "UPDATE users SET permissions = 1 WHERE id = :id";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':id', $userId);
+        $stmt->execute();
+    }
 }

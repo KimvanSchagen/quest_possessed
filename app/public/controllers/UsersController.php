@@ -133,4 +133,15 @@ class UsersController
     {
         return $this->usersModel->getTop3Users();
     }
+
+    public function makeAdmin() {
+        $input = file_get_contents('php://input');
+        $userId = json_decode($input, true);
+
+        if(!isset($userId)) {
+            throw new Error("Select user");
+        }
+
+        $this->usersModel->makeAdmin($userId);
+    }
 }

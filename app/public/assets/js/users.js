@@ -23,13 +23,84 @@ async function fetchAndDisplayUsers() {
             <td>${user.date_created}</td>
             <td>${user.level}</td>
             <td>${user.current_points}</td>
-            <td><a href="/user/delete">Delete</a></td>
-            <td><a href="/user/admin">Make admin</a></td>`;
+            <td><button onclick="openDeleteUserDialog()">Delete</button></td>
+            <td><button onclick="openMakeAdminDialog(${user.id})">Make admin</button></td>`;
             usersContainer.appendChild(userRow);
         });
     } catch (error) {
         console.error("Error fetching users: ", error);
     }
+}
+
+function openNewUserDialog() {
+    const dialog = document.getElementById("newUserDialog");
+    dialog.showModal();
+}
+
+function closeNewUserDialog() {
+    const dialog = document.getElementById("newUserDialog");
+    dialog.close();
+}
+
+async function newUser(event) {
+    console.log("Creating new user");
+
+    event.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+
+}
+
+async function makeAdmin(userId) {
+    try {
+        const response = await fetch("/api/make-admin", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userId),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        await fetchAndDisplayUsers(); // Refresh the user list
+    } catch (error) {
+        console.error("Error making user an admin: ", error);
+        alert("Failed to make user an admin.");
+    }
+}
+
+function openMakeAdminDialog(userId) {
+    const dialog = document.getElementById("makeAdminDialog");
+    const confirmButton = dialog.querySelector("#confirmMakeAdmin");
+    confirmButton.onclick = () => {
+        makeAdmin(userId);
+        closeMakeAdminDialog();
+    };
+    dialog.showModal();
+}
+function closeMakeAdminDialog() {
+    const dialog = document.getElementById("makeAdminDialog");
+    dialog.close();
+}
+
+async function deleteUser() {
+
+}
+
+function openDeleteUserDialog() {
+    const dialog = document.getElementById("deleteUserDialog");
+    dialog.showModal();
+}
+
+function closeDeleteUserDialog() {
+    const dialog = document.getElementById("deleteUserDialog");
+    dialog.close();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,4 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
             row.style.display = id.includes(query) || username.includes(query) || email.includes(query) || role.includes(query) ? "" : "none";
         });
     });
+
+    document
+        .getElementById("newUserForm")
+        .addEventListener("submit", newUser);
 });
