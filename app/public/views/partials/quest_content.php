@@ -35,6 +35,11 @@
     <p><?php echo htmlspecialchars($quest['description']) ?></p>
     <hr>
     <?php
+    if ($status == QuestStatus::Ongoing) {
+    ?>
+    <button>Continue Quest</button>
+    <?php
+        }
     foreach ($stages as $stage) {
         ?>
         <h1><?php echo htmlspecialchars($stage['name']) ?></h1>
@@ -60,11 +65,6 @@
         if ($status == QuestStatus::Not_Started) {
             ?>
             <button>Start Quest</button>
-            <?php
-        }
-        if ($status == QuestStatus::Ongoing) {
-            ?>
-            <button>Continue Quest</button>
             <?php
         }
         if (isManager() || $isOwner) {

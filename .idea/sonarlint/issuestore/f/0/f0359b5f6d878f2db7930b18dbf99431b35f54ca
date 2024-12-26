@@ -1,9 +1,12 @@
 
-t	php:S1481"2Remove this unused "$pointsNeeded" local variable.(ô‹œ8íœªÀ2J$b39252f9-d879-41cd-ba39-871d3a1e1177
-h	php:S2003"&Replace "require" with "require_once".(´Áíş8”Äº¤½2J$8517be3a-3843-47da-aac5-97256dd17f23
-|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8˜¯¤½2J$8cb17aef-129f-4eb4-be7b-12d6823041bb
-|	php:S6600"5Remove the parentheses from this "require_once" call.(¡™ñõûÿÿÿÿ8Àº©À2J$f807b682-2e8f-45e3-9e02-f84a8558561a
-r	php:S6600"0Remove the parentheses from this "require" call.(´Áíş8”Äº¤½2J$d25f3a78-570b-452e-b40d-cfff86ff31a5
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8˜¯¤½2J$029dbdbe-cf9c-41ac-9540-f3d5fe1ac7b0
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¡™ñõûÿÿÿÿ8Àº©À2J$53462cde-87be-44d7-bff3-412aa85d8b78
-	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(´Áíş8”Äº¤½2J$f9c3a1ce-323d-460e-87e1-323ec06fdba0
+t	php:S1481"2Remove this unused "$pointsNeeded" local variable.(ô‹œ8Õ¼¨ À2J$86dd9be8-31a8-42bf-a961-606ba559b60c
+z	php:S1481"3Remove this unused "$ongoingQuests" local variable.(¿±Ğ ıÿÿÿÿ8Õ¼¨ À2J$6fd56564-eeab-4012-bf50-ec6b5df6d42b
+h	php:S2003"&Replace "require" with "require_once".(´Áíş8Õ¼¨ À2J$08aa4be4-1f1d-43dc-ae88-7d60fc2f4d9b
+|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8×¼¨ À2J$0dd085a6-3b85-40ec-bd3e-285a5b3cfb57
+|	php:S6600"5Remove the parentheses from this "require_once" call.(¡™ñõûÿÿÿÿ8×¼¨ À2J$f3af1849-be1b-4c27-b51d-e36ed8546a5d
+|	php:S6600"5Remove the parentheses from this "require_once" call.(Üßëáüÿÿÿÿ8×¼¨ À2J$9d74bcf3-cc36-46b7-97fa-15787f295b90
+r	php:S6600"0Remove the parentheses from this "require" call.(´Áíş8×¼¨ À2J$1fc6fd92-b354-4238-a3e2-b0d37314682b
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8×¼¨ À2J$2ffd9b40-cde4-4ec3-b725-a6299889bb11
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¡™ñõûÿÿÿÿ8×¼¨ À2J$4da3bcec-8000-4c8d-b04a-f0944a4edaf5
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Üßëáüÿÿÿÿ8×¼¨ À2J$7f77d957-d43c-4d12-a9b8-a256059ab9f5
+	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(´Áíş8×¼¨ À2J$7acdb2e1-f763-4aab-b58b-5bb5c222a6d1
