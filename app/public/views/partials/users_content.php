@@ -2,8 +2,8 @@
     <h1>Users</h1>
     <div class="grid">
         <form role="search">
-            <input name="search" type="search" placeholder="Search"/>
-            <input type="submit" value="Search"/>
+            <input name="search" type="search" placeholder="Search" id="search-input"/>
+            <input id="search-button" type="submit" value="Search"/>
         </form>
         <div class="grid">
             <p></p>
