@@ -10,4 +10,9 @@ class ProgressController
     {
         $this->progressModel = new ProgressModel();
     }
+
+    public function getCurrentStage($questId) {
+        $user = $_SESSION['user'];
+        return $this->progressModel->getCurrentStage($user['id'], $questId);
+    }
 }

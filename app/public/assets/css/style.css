@@ -193,6 +193,11 @@
     text-decoration: none;
 }
 
+.achievement_points img {
+    border-radius: 100px;
+    width: 100px;
+}
+
 a button {
     width: 100%;
 }

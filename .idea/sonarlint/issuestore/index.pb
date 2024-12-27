@@ -171,3 +171,7 @@ U
 %app/public/assets/js/edit_password.js,9\0\90d35d8ae06d2205a69f106d83de9b4c311858fa
 \
 ,app/public/assets/js/edit_profile_picture.js,a\c\ac055ac8c93af891f30e5bbb2494c2eb8de34430
+Y
+)app/public/views/pages/quest_progress.php,f\8\f87d6f8fc0f17c4fef87e89495b8ee59966078ee
+d
+4app/public/views/partials/quest_progress_content.php,c\7\c7b12875beef16f0a15542fd073d347a586c1511

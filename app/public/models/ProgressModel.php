@@ -47,6 +47,27 @@ class ProgressModel extends BaseModel
         } else {
             return null;
         }
+    }
 
+    public function getCurrentStage($user_id, $quest_id) {
+        $query = "SELECT uqp.quest_id, q.name AS quest_name, uqp.current_stage_id AS stage_id, s.name AS stage_name, s.description AS stage_description, s.achievement_points
+                    FROM user_quest_progress uqp
+                    JOIN quests q ON uqp.quest_id = q.quest_id
+                    JOIN stages s ON uqp.current_stage_id = s.stage_id
+                    WHERE uqp.user_id = :userId AND uqp.quest_id = :questId";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':userId', $user_id);
+        $stmt->bindParam(':questId', $quest_id);
+
+        $stmt->execute();
+
+        $currentStage = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if($currentStage) {
+            return $currentStage;
+        }
+        else {
+            return 0;
+        }
     }
 }

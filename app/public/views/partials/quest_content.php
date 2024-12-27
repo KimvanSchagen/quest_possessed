@@ -37,7 +37,7 @@
     <?php
     if ($status == QuestStatus::Ongoing) {
     ?>
-    <button>Continue Quest</button>
+        <a href="/quest/progress/?id=<?php echo urlencode($quest['quest_id']) ?>"><button>Continue Quest</button></a>
     <?php
         }
     foreach ($stages as $stage) {
