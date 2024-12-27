@@ -175,3 +175,5 @@ Y
 )app/public/views/pages/quest_progress.php,f\8\f87d6f8fc0f17c4fef87e89495b8ee59966078ee
 d
 4app/public/views/partials/quest_progress_content.php,c\7\c7b12875beef16f0a15542fd073d347a586c1511
+P
+ app/public/assets/js/discover.js,a\2\a23112b37a1fcb694df89fd39cf8f0fdbc5ed7a9

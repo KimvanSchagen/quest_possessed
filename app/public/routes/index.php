@@ -4,11 +4,16 @@ require_once(__DIR__ . "/../controllers/QuestController.php");
 require_once(__DIR__ . "/../controllers/UsersController.php");
 
 Route::add('/', function () {
-    if (!isManager()) {
+    $questController = new QuestController();
+    if (!isLoggedIn()) {
         require(__DIR__ . "/../views/pages/index.php");
-    } else {
+    } else if (isUser()) {
+        $user = $_SESSION['user'];
+        $ongoingQuests = $questController->getOngoingByUser($user['id']);
+        require(__DIR__ . "/../views/pages/index.php");
+    }
+    else {
         $userController = new UsersController();
-        $questController = new QuestController();
         $user = $_SESSION['user'];
         $userCount = $userController->getUserCount();
         $publicQuestCount = $questController->getPublicQuestsCount();
