@@ -1,7 +1,7 @@
 
-‚	php:S1131Ž"@Remove the useless trailing whitespaces at the end of this line.(Ùüš-8»é¸¦¾2J$a069455d-c13e-42ba-973b-c57df7446435
-‘	php:S1192©"IDefine a constant instead of duplicating this literal ":questId" 3 times.(‚ºÆöÿÿÿÿÿ8»é¸¦¾2J$d477db4b-4d84-49ba-8446-1ecd6ddd9403
-Š	php:S1192h"HDefine a constant instead of duplicating this literal ":userId" 3 times.(ƒþìÐ8»é¸¦¾2J$4d96889d-bcfb-4a8c-a93c-16d3ab809119
-x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8»é¸¦¾2J$a31b7c05-82cb-4933-a033-629975e23659
-w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8»é¸¦¾2J$3307e9a2-4579-41c8-bb15-155e40bcdd41
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8»é¸¦¾2J$d617a216-2efe-4b78-bbf0-a0ed39a19ab9
+‚	php:S1131¡"@Remove the useless trailing whitespaces at the end of this line.(Ùüš-8»é¸¦¾2J$8873bfac-3a9b-46da-a64b-229052a11799
+‘	php:S1192¼"IDefine a constant instead of duplicating this literal ":questId" 3 times.(‚ºÆöÿÿÿÿÿ8»é¸¦¾2J$4f90768f-bd48-4042-a414-5c2560dcd53d
+Š	php:S1192{"HDefine a constant instead of duplicating this literal ":userId" 3 times.(ƒþìÐ8»é¸¦¾2J$d398a05d-f41a-4a35-b126-d93d9b7fdaca
+x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8»é¸¦¾2J$4b032541-96cf-43a4-be4d-504ca95c2ec9
+w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8»é¸¦¾2J$d08623f8-b33e-473b-b7b2-b177ffc0b80f
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8»é¸¦¾2J$8aae27ca-f1f4-4ddc-a76f-81e19d087019

@@ -15,9 +15,13 @@ class QuestController
         $this->progressModel = new ProgressModel();
     }
 
-    public function getAll()
+    public function getAll(): ?array
     {
         return $this->questModel->getAll();
+    }
+
+    public function getAllPublic() {
+        return $this->questModel->getAllPublic();
     }
 
     public function getPublicQuestsCount()
@@ -40,27 +44,27 @@ class QuestController
         return $this->questModel->getById($quest_id);
     }
 
-    public function getByUser($id)
+    public function getByUser($id): ?array
     {
         return $this->questModel->getByUser($id);
     }
 
-    public function getCompletedByUser($id)
+    public function getCompletedByUser($id): ?array
     {
         return $this->questModel->getCompletedByUser($id);
     }
 
-    public function getOngoingByUser($id)
+    public function getOngoingByUser($id): ?array
     {
         return $this->questModel->getOngoingByUser($id);
     }
 
-    public function getStagesByQuest($quest_id)
+    public function getStagesByQuest($quest_id): ?array
     {
         return $this->questModel->getStagesByQuest($quest_id);
     }
 
-    public function getQuestStatusByUser($quest_id, $user_id)
+    public function getQuestStatusByUser($quest_id, $user_id): QuestStatus
     {
         if ($this->progressModel->isOngoingByUser($quest_id, $user_id)) {
             return QuestStatus::Ongoing;
@@ -72,9 +76,21 @@ class QuestController
         }
     }
 
-    public function deleteQuest($quest_id)
+    public function deleteQuest($quest_id): void
     {
         $this->questModel->deleteStagesByQuest($quest_id);
         $this->questModel->deleteQuest($quest_id);
+    }
+
+    public function getRecommendedQuests() {
+        $allPublicQuests = $this->getAllPublic();
+
+        if (empty($allPublicQuests)) {
+            return []; // Return an empty array if no public quests exist
+        }
+
+        shuffle($allPublicQuests); // Randomize the order of quests
+
+        return array_slice($allPublicQuests, 0, 5);
     }
 }

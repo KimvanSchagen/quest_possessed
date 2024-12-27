@@ -1,4 +1,7 @@
 
-f	php:S2003"&Replace "require" with "require_once".( ÓõşÿÿÿÿJ$2239ab7a-ef45-423e-8074-c342b3505cd8
-p	php:S6600"0Remove the parentheses from this "require" call.( ÓõşÿÿÿÿJ$5d341e12-03fd-498b-98c1-aeb23e16fac8
-Œ	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.( ÓõşÿÿÿÿJ$7e32a9cb-5203-4806-bc71-1ab9b360307b
+y	php:S1481"7Remove this unused "$recommendedQuests" local variable.(÷±ö³8ÄƒÙÂÀ2J$1761857c-5528-4c61-9fa4-2ca81981148a
+m	php:S2003	"&Replace "require" with "require_once".( Óõşÿÿÿÿ8ÅƒÙÂÀ2J$ad8ea30c-c4e4-485b-aa12-3ba62a3f093c
+|	php:S6600"5Remove the parentheses from this "require_once" call.(Üßëáüÿÿÿÿ8ÅƒÙÂÀ2J$49f8ecab-8e61-46fa-a90c-d26131fc3e2b
+w	php:S6600	"0Remove the parentheses from this "require" call.( Óõşÿÿÿÿ8ÅƒÙÂÀ2J$5463a88e-d6e2-45e4-a8e5-2744a7951158
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Üßëáüÿÿÿÿ8ÅƒÙÂÀ2J$f54c00fb-46b9-4149-babc-feab1b6f41b1
+“	php:S4833	"LReplace "require" with namespace import mechanism through the "use" keyword.( Óõşÿÿÿÿ8ÅƒÙÂÀ2J$71b2a8a8-ef76-49b3-9733-0810c54140b8

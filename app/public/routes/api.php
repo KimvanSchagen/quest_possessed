@@ -15,6 +15,12 @@ Route::add('/api/quests', function () {
     echo json_encode($quests);
 });
 
+Route::add('/api/discover' ,function () {
+    $questController = new QuestController();
+    $quests = $questController->getAllPublic();
+    echo json_encode($quests);
+});
+
 Route::add('/api/new-user', function () {
     $userController = new UsersController();
     $userController->newUser();

@@ -1,6 +1,6 @@
 async function fetchAndDisplayQuests() {
     try {
-        const response = await fetch("/api/quests");
+        const response = await fetch("/api/discover");
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);

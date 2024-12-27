@@ -27,6 +27,25 @@ class QuestModel extends BaseModel {
         }
     }
 
+    public function getAllPublic() {
+        $query = "SELECT q.quest_id, q.name, q.description, q.creator_id, q.created_at, q.public, u.username
+                    FROM quests q
+                    INNER JOIN users u ON q.creator_id = u.id
+                    WHERE public = 1";
+        $stmt = self::$pdo->prepare($query);
+
+        $stmt->execute();
+
+        $quests = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if ($quests) {
+            return $quests;
+        }
+        else {
+            return null;
+        }
+    }
+
     public function getOngoingQuestsCount() {
         $query = "SELECT COUNT(*)
                     FROM user_quest_progress";

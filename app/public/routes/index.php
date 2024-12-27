@@ -5,6 +5,7 @@ require_once(__DIR__ . "/../controllers/UsersController.php");
 
 Route::add('/', function () {
     $questController = new QuestController();
+    $recommendedQuests = $questController->getRecommendedQuests();
     if (!isLoggedIn()) {
         require(__DIR__ . "/../views/pages/index.php");
     } else if (isUser()) {

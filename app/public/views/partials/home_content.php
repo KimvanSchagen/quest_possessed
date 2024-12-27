@@ -3,7 +3,19 @@
 <h2>Welcome to Quest Possessed</h2>
 <p>Embark on a journey of discovery and growth with Quest Possessed - your gateway to exciting quests and endless possibilities.</p>
 
-<h2>Featured Quests</h2>
+<div class="recommended">
+    <h2>Featured Quests</h2>
+    <?php
+    foreach ($recommendedQuests as $quest) {
+        ?>
+        <h3><?php echo htmlspecialchars($quest['name']) ?></h3>
+        <p><?php echo htmlspecialchars($quest['description']) ?></p>
+        <a href="/quest?id=<?php echo htmlspecialchars($quest['quest_id']) ?>">View</a>
+        <?php
+    }
+    ?>
+</div>
+
 
 <?php
 if (isLoggedIn()) {
