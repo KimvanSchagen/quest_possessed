@@ -199,7 +199,8 @@ class QuestModel extends BaseModel {
         }
     }
 
-    public function deleteStagesByQuest($quest_id) {
+    public function deleteStagesByQuest($quest_id): void
+    {
         $query = "DELETE FROM stages WHERE quest_id = :questId";
         $stmt = self::$pdo->prepare($query);
         $stmt->bindParam(':questId', $quest_id);

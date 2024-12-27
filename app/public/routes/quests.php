@@ -41,6 +41,7 @@ Route::add('/quest', function () {
     } else {
         header("Location: /");
     }
+    exit;
 });
 
 Route::add('/quest/delete', function () {
@@ -67,6 +68,7 @@ Route::add('/quest/delete', function () {
         exit;
     }
     header("Location: /");
+    exit;
 });
 
 Route::add('/quest/edit', function () {
