@@ -13,6 +13,12 @@ class ProgressController
         $this->progressModel = new ProgressModel();
     }
 
+    public function startQuest($questId) {
+        $user = $_SESSION['user'];
+        $stageId = $this->progressModel->getFirstStage($questId);
+        $this->progressModel->startQuest($user['id'], $questId, $stageId);
+    }
+
     public function getCurrentStage($questId) {
         $user = $_SESSION['user'];
         return $this->progressModel->getCurrentStage($user['id'], $questId);

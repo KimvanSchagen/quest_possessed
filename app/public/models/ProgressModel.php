@@ -9,6 +9,17 @@ class ProgressModel extends BaseModel
         parent::__construct();
     }
 
+    public function startQuest($userId, $questId, $stageId) {
+        $query = "INSERT INTO user_quest_progress (user_id, quest_id, current_stage_id)
+                    VALUES (:userId, :questId, :stageId)";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':userId', $userId);
+        $stmt->bindParam(':questId', $questId);
+        $stmt->bindParam(':stageId', $stageId);
+
+        $stmt->execute();
+    }
+
     public function isOngoingByUser($quest_id, $user_id)
     {
         $query = "SELECT user_id, quest_id, current_stage_id
@@ -47,6 +58,17 @@ class ProgressModel extends BaseModel
         } else {
             return null;
         }
+    }
+
+    public function getFirstStage($questId) {
+        $query = "SELECT MIN(stage_id)
+                    FROM stages
+                    WHERE quest_id = :questId;";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':questId', $questId);
+        $stmt->execute();
+
+        return $stmt->fetch(PDO::FETCH_COLUMN);
     }
 
     public function getCurrentStage($user_id, $quest_id) {

@@ -64,7 +64,7 @@
         <?php
         if ($status == QuestStatus::Not_Started  && !isManager()) {
             ?>
-            <button>Start Quest</button>
+            <a href="/quest/progress/start/?id=<?php echo urlencode($quest['quest_id']) ?>"><button>Start Quest</button></a>
             <?php
         }
         if (isManager() || $isOwner) {

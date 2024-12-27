@@ -37,6 +37,19 @@ Route::add('/quest/progress', function () {
     }
 });
 
+Route::add('/quest/progress/start', function () {
+    if (isLoggedIn()) {
+        $progressController = new ProgressController();
+        $questId = $_GET['id'] ?? null;
+
+        $progressController->startQuest($questId);
+        header("Location: /quest/progress/?id=$questId");
+    } else {
+        header("Location: /");
+    }
+    exit;
+});
+
 Route::add('/quest/progress/nextStage', function () {
     if (isLoggedIn()) {
         $progressController = new ProgressController();
@@ -53,9 +66,8 @@ Route::add('/quest/progress/nextStage', function () {
         else {
             header("Location: /quest/progress?id={$questId}");
         }
-        exit;
     } else {
         header("Location: /");
-        exit;
     }
+    exit;
 });
