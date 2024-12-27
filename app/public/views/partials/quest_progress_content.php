@@ -7,4 +7,4 @@
     <p><?php echo htmlspecialchars($currentStage['achievement_points']) ?></p>
 </div>
 
-<a href="/quest/progress/nextStage"><button>Complete Stage</button></a>
+<a href="/quest/progress/nextStage?id=<?php echo urlencode($questId) ?>"><button>Complete Stage</button></a>

@@ -1,28 +1,28 @@
 
-t	php:S1481"2Remove this unused "$pointsNeeded" local variable.(ô‹œ8Ùâ¨Ó½2J$f6de1b60-554d-468d-9bba-3e657ab08205
-z	php:S1481"3Remove this unused "$createdQuests" local variable.(¡¼Äüÿÿÿÿ8Ùâ¨Ó½2J$79b8496b-1b87-4561-8b4f-f3f546d1ae90
-w	php:S1481"5Remove this unused "$completedQuests" local variable.(îÎÒ„8Ùâ¨Ó½2J$aa8d4781-6d1d-4daf-9431-01960ade4334
-z	php:S1481"3Remove this unused "$ongoingQuests" local variable.(¢Í—şÿÿÿÿ8Ä¦¶²¾2J$3e7af1ec-d749-4b8b-9eb3-9987a8450218
-m	php:S2003"&Replace "require" with "require_once".(‘ãáÜÿÿÿÿÿ8Ùâ¨Ó½2J$b79f9c82-8a10-44bc-9278-d3a2cca6fec3
-h	php:S2003"&Replace "require" with "require_once".(Ü»çè8Ùâ¨Ó½2J$f304ac47-5b15-496c-963f-01e02391d4c6
-m	php:S2003"&Replace "require" with "require_once".(üãÖ‰üÿÿÿÿ8Ùâ¨Ó½2J$0ca62fe1-2234-4862-9942-a010a0b78aeb
-m	php:S2003 "&Replace "require" with "require_once".(ˆĞÌÊıÿÿÿÿ8Ùâ¨Ó½2J$72db347a-cfbc-4bfe-a648-a343dbb94e68
-m	php:S2003!"&Replace "require" with "require_once".(ò­Ä×úÿÿÿÿ8Ùâ¨Ó½2J$a3c4ea88-8116-4cc4-8e08-7992470ceeea
-|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8Ùâ¨Ó½2J$3c6500b1-eba5-4d72-90e2-1854a51990d9
-|	php:S6600"5Remove the parentheses from this "require_once" call.(¡™ñõûÿÿÿÿ8Ùâ¨Ó½2J$3d338610-c2b3-47d5-afc8-a1e27a90ff49
-v	php:S6600"5Remove the parentheses from this "require_once" call.(ĞîÛ(8Ùâ¨Ó½2J$cc3cd9b1-1baa-4591-bd88-5877187535b3
-w	php:S6600"5Remove the parentheses from this "require_once" call.(’‹¢ş8Ùâ¨Ó½2J$612b63c3-f2bd-4eb4-8850-97e35d13e33e
-w	php:S6600"0Remove the parentheses from this "require" call.(‘ãáÜÿÿÿÿÿ8Ùâ¨Ó½2J$f9b2ffcc-bbe3-48b0-a984-4c482848ef75
-r	php:S6600"0Remove the parentheses from this "require" call.(Ü»çè8Ùâ¨Ó½2J$e4d1f6c7-0512-4abc-8862-fae9d4c98641
-w	php:S6600"0Remove the parentheses from this "require" call.(üãÖ‰üÿÿÿÿ8Ùâ¨Ó½2J$9dc97061-30eb-41b6-858b-616be0ea9ddc
-w	php:S6600 "0Remove the parentheses from this "require" call.(ˆĞÌÊıÿÿÿÿ8Ùâ¨Ó½2J$31f571ea-dff2-48d7-8ea7-18b00cb1aba7
-w	php:S6600!"0Remove the parentheses from this "require" call.(ò­Ä×úÿÿÿÿ8Ùâ¨Ó½2J$7be0ac4a-ca17-4cd5-b1ba-ce86558ba04e
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8Ùâ¨Ó½2J$2f570674-0cb8-4b43-8251-9c962139f783
-˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¡™ñõûÿÿÿÿ8Ùâ¨Ó½2J$0e580d39-c111-42ea-b21a-dc3ab5418c0f
-’	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ĞîÛ(8Ùâ¨Ó½2J$6589941d-768c-48e4-a345-0af22278c408
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(’‹¢ş8Ùâ¨Ó½2J$b2f2c3ae-63c6-406d-94c1-ecb4e532edf7
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(‘ãáÜÿÿÿÿÿ8Ùâ¨Ó½2J$0158dcaf-c952-4291-a985-7e561c3035b5
-	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(Ü»çè8Ùâ¨Ó½2J$b099005f-3e77-4bcf-bebd-58aedce26bf1
-“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(üãÖ‰üÿÿÿÿ8Ùâ¨Ó½2J$1f89ecfb-6fe7-4ac1-bc07-6bccbc4c72bf
-“	php:S4833 "LReplace "require" with namespace import mechanism through the "use" keyword.(ˆĞÌÊıÿÿÿÿ8Ùâ¨Ó½2J$1cd01511-474e-4158-b63b-d68c483580a7
-“	php:S4833!"LReplace "require" with namespace import mechanism through the "use" keyword.(ò­Ä×úÿÿÿÿ8Ùâ¨Ó½2J$74810ff7-98ae-4288-80e1-710cc9194379
+t	php:S1481"2Remove this unused "$pointsNeeded" local variable.(ô‹œ8Ùâ¨Ó½2J$99dabf7f-4a03-4e49-a358-ba48b7b53257
+z	php:S1481"3Remove this unused "$createdQuests" local variable.(¡¼Äüÿÿÿÿ8Ùâ¨Ó½2J$3fa79bd1-bccc-416b-8c70-3ad05c5f6af3
+w	php:S1481"5Remove this unused "$completedQuests" local variable.(îÎÒ„8Ùâ¨Ó½2J$9376f3d1-da1d-44fb-8d17-663e751b286f
+z	php:S1481"3Remove this unused "$ongoingQuests" local variable.(¢Í—şÿÿÿÿ8Ä¦¶²¾2J$28be8992-b9a9-4ca6-96a3-131d50028468
+m	php:S2003"&Replace "require" with "require_once".(‘ãáÜÿÿÿÿÿ8Ùâ¨Ó½2J$89b16d4e-f71f-4637-86d6-30cf7eb0d44c
+h	php:S2003"&Replace "require" with "require_once".(Ü»çè8Ùâ¨Ó½2J$026e9686-32e3-4380-a73f-19f94328ec07
+m	php:S2003"&Replace "require" with "require_once".(üãÖ‰üÿÿÿÿ8Ùâ¨Ó½2J$36fbf6e5-db0e-4d98-b30e-087505ee55ef
+m	php:S2003 "&Replace "require" with "require_once".(ˆĞÌÊıÿÿÿÿ8Ùâ¨Ó½2J$a8b17c59-96b5-4f5d-8c36-1df1c5d42ef4
+m	php:S2003!"&Replace "require" with "require_once".(ò­Ä×úÿÿÿÿ8Ùâ¨Ó½2J$b6000c21-70bf-4ef2-b2f8-11358f95a1bb
+|	php:S6600"5Remove the parentheses from this "require_once" call.(†Œïşÿÿÿÿ8Ùâ¨Ó½2J$0f8161dd-3cc1-437c-8aa1-b1d3c2f74581
+|	php:S6600"5Remove the parentheses from this "require_once" call.(¡™ñõûÿÿÿÿ8Ùâ¨Ó½2J$b15c0b07-d674-4c80-a285-f8056940d4e8
+v	php:S6600"5Remove the parentheses from this "require_once" call.(ĞîÛ(8Ùâ¨Ó½2J$e04272c5-4db5-4c9c-bb95-f5049132ce5b
+w	php:S6600"5Remove the parentheses from this "require_once" call.(’‹¢ş8Ùâ¨Ó½2J$b41afa23-b776-428b-828b-f89a892e8367
+w	php:S6600"0Remove the parentheses from this "require" call.(‘ãáÜÿÿÿÿÿ8Ùâ¨Ó½2J$8f8212a6-17e5-4cda-8888-2a6ae5f3b52a
+r	php:S6600"0Remove the parentheses from this "require" call.(Ü»çè8Ùâ¨Ó½2J$ef156261-8099-4618-9fcb-e3009a4ffb7e
+w	php:S6600"0Remove the parentheses from this "require" call.(üãÖ‰üÿÿÿÿ8Ùâ¨Ó½2J$398d124d-5139-4ee3-a0cc-2d9b2f22e1ae
+w	php:S6600 "0Remove the parentheses from this "require" call.(ˆĞÌÊıÿÿÿÿ8Ùâ¨Ó½2J$4238ac3e-0018-4811-b767-bf1758511067
+w	php:S6600!"0Remove the parentheses from this "require" call.(ò­Ä×úÿÿÿÿ8Ùâ¨Ó½2J$b50df505-42eb-42c2-b21e-92a16ff42ae5
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†Œïşÿÿÿÿ8Ùâ¨Ó½2J$50bc1c56-b870-4100-9ff5-675af6bf67c0
+˜	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¡™ñõûÿÿÿÿ8Ùâ¨Ó½2J$78b3059b-08ce-494c-885f-1d1d4d545e41
+’	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(ĞîÛ(8Ùâ¨Ó½2J$dab86a18-fc81-434e-94a0-4d8cba9e1435
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(’‹¢ş8Ùâ¨Ó½2J$cdacf595-ba02-4ba5-9820-053d5d36bd79
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(‘ãáÜÿÿÿÿÿ8Ùâ¨Ó½2J$31924976-67c1-4220-b584-1ae16369ac88
+	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(Ü»çè8Ùâ¨Ó½2J$8b27f4f5-54c5-469e-bcdb-c3d5bd854605
+“	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(üãÖ‰üÿÿÿÿ8Ùâ¨Ó½2J$8ceea66e-7c13-44f4-a4d6-09bdc3cb4504
+“	php:S4833 "LReplace "require" with namespace import mechanism through the "use" keyword.(ˆĞÌÊıÿÿÿÿ8Ùâ¨Ó½2J$ed5ac782-76a2-4e81-964b-85115307a4e1
+“	php:S4833!"LReplace "require" with namespace import mechanism through the "use" keyword.(ò­Ä×úÿÿÿÿ8Ùâ¨Ó½2J$28c7f833-a294-42e4-ac12-bdffd65e2ba3

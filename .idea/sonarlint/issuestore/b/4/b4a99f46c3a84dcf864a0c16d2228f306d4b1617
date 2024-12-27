@@ -1,6 +1,6 @@
 
-	php:S1192"IDefine a constant instead of duplicating this literal ":questId" 3 times.(‚ºÆöÿÿÿÿÿ8‹ï÷«À2J$b465065a-6464-4e24-aa2f-026ba37faf71
-Š	php:S1192"HDefine a constant instead of duplicating this literal ":userId" 3 times.(ÓÈ’¥8Œï÷«À2J$f4d4a6d1-1db5-437b-aeb1-d26f238b713d
-x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8Œï÷«À2J$86a803bf-c909-4cdb-83a7-a08600a6a29a
-w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8Œï÷«À2J$b4ac8115-2900-451b-8316-24f33e2d8bd4
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8Œï÷«À2J$81e82231-7325-4235-99cf-abbe4c99d352
+	php:S1192"IDefine a constant instead of duplicating this literal ":questId" 6 times.(‚ºÆöÿÿÿÿÿ8âå¿À2J$5d26d18c-4783-4a81-914a-c1b570348198
+Š	php:S1192"HDefine a constant instead of duplicating this literal ":userId" 8 times.(ÓÈ’¥8âå¿À2J$7c904e5c-a577-440f-9487-1935cf845115
+x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8âå¿À2J$4e5d257f-39ba-424f-89a0-bea4ad4ad67c
+w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8âå¿À2J$69df9d27-c0d4-44b7-9f11-28417c2dbc4f
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8âå¿À2J$5062bce0-56fd-42d5-918a-975bfec1ab76
