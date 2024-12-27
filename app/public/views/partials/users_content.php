@@ -70,7 +70,7 @@
         </header>
         <p>Are you sure you want to delete this user?</p>
         <div class="grid">
-            <button onclick="deleteUser()">Yes</button>
+            <button id="confirmDeleteUser">Yes</button>
             <button onclick="closeDeleteUserDialog()">No</button>
         </div>
     </article>

@@ -189,4 +189,15 @@ class UsersController
 
         $this->usersModel->makeAdmin($userId);
     }
+
+    public function deleteUser() {
+        $input = file_get_contents('php://input');
+        $userId = json_decode($input, true);
+
+        if(!isset($userId)) {
+            throw new Error("Select user");
+        }
+
+        $this->usersModel->deleteUser($userId);
+    }
 }

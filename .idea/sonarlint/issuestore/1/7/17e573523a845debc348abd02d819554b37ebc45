@@ -1,6 +1,6 @@
 
-	php:S1192Y"GDefine a constant instead of duplicating this literal ":email" 3 times.(ŒŸ¥³üÿÿÿÿ8íÈ«ªÀ2J$edc86e78-c12b-4252-bbef-8b82e7197ce7
-‘	php:S1192F"JDefine a constant instead of duplicating this literal ":username" 3 times.(ìŠ‘ùÿÿÿÿ8¿š«ªÀ2J$ccb9e92c-9c68-4fca-b911-9a90a4d62075
-x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8õ‘©ªÀ2J$2ac3014c-26d7-463e-b99d-a4a6f3458b21
-w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8õ‘©ªÀ2J$e13777bd-3e72-4a27-a218-636f2ae40422
-“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8õ‘©ªÀ2J$9fb152f6-2c8f-4890-9dc8-3ab37065e844
+	php:S1192Y"GDefine a constant instead of duplicating this literal ":email" 3 times.(ŒŸ¥³üÿÿÿÿ8©øá»À2J$3bda1e45-59a0-4c6e-94bf-6ad0cf1ca817
+‘	php:S1192F"JDefine a constant instead of duplicating this literal ":username" 3 times.(ìŠ‘ùÿÿÿÿ8©øá»À2J$0bf45b6a-660a-4732-acc7-0e64ecdd04c0
+x	php:S1185"6Remove this method "__construct" to simply inherit it.(ƒöÙƒ8©øá»À2J$593ff66c-4601-4051-9cb8-f2b84fc5d5ab
+w	php:S6600"5Remove the parentheses from this "require_once" call.(¥¶ä‘8©øá»À2J$80eab2a6-7b8d-41c7-b6dc-866c6d67c7be
+“	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(¥¶ä‘8©øá»À2J$47c1d6bb-f034-4e4b-acb9-5b6bb928192c

@@ -23,7 +23,7 @@ async function fetchAndDisplayUsers() {
             <td>${user.date_created}</td>
             <td>${user.level}</td>
             <td>${user.current_points}</td>
-            <td><button onclick="openDeleteUserDialog()">Delete</button></td>
+            <td><button onclick="openDeleteUserDialog(${user.id})">Delete</button></td>
             <td><button onclick="openMakeAdminDialog(${user.id})">Make admin</button></td>`;
             usersContainer.appendChild(userRow);
         });
@@ -146,12 +146,35 @@ function closeMakeAdminDialog() {
     dialog.close();
 }
 
-async function deleteUser() {
+async function deleteUser(userId) {
+    try {
+        const response = await fetch("/api/delete-user", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userId),
+        });
 
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        closeDeleteUserDialog();
+        await fetchAndDisplayUsers();
+    } catch (error) {
+        console.error("Error deleting user: ", error);
+        alert("Failed to delete admin.");
+    }
 }
 
-function openDeleteUserDialog() {
+function openDeleteUserDialog(userId) {
     const dialog = document.getElementById("deleteUserDialog");
+    const confirmButton = dialog.querySelector("#confirmDeleteUser");
+    confirmButton.onclick = () => {
+        deleteUser(userId);
+        closeMakeAdminDialog();
+    }
     dialog.showModal();
 }
 

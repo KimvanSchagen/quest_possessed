@@ -179,4 +179,12 @@ class UsersModel extends BaseModel
         $stmt->bindParam(':id', $userId);
         $stmt->execute();
     }
+
+    public function deleteUser($userId) {
+        $query = "DELETE FROM users
+                    WHERE id = :id;";
+        $stmt = self::$pdo->prepare($query);
+        $stmt->bindParam(':id', $userId);
+        $stmt->execute();
+    }
 }

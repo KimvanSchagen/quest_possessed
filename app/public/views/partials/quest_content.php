@@ -62,7 +62,7 @@
     ?>
     <div class="grid">
         <?php
-        if ($status == QuestStatus::Not_Started) {
+        if ($status == QuestStatus::Not_Started  && !isManager()) {
             ?>
             <button>Start Quest</button>
             <?php

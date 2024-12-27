@@ -44,3 +44,8 @@ Route::add('/api/make-admin', function () {
     $userController = new UsersController();
     $userController->makeAdmin();
 }, "POST");
+
+Route::add('/api/delete-user', function () {
+    $userController = new UsersController();
+    $userController->deleteUser();
+}, "POST");
